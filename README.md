@@ -90,4 +90,6 @@ godot --headless --script test/run_tests.gd
 
 ## License
 
-MIT
+Copyright (c) 2026 Magd Essam
+
+All Rights Reserved.
