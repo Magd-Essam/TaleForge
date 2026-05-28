@@ -1,0 +1,16 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+/android/build/
+clips/
+
+# Temp / auto-save files
+*.tmp
+
+# Assets & binary content
+assets/
+ziva_installer/
+.ziva/
+
+# Backups
+PLAN.md.bak

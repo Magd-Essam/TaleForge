@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://cnfg5exsvgtno"]
+
+[ext_resource type="Script" uid="uid://dwiyptlnjjfqo" path="res://ui/log_panel.gd" id="1_logpanel"]
+[ext_resource type="Texture2D" uid="uid://vodfkm7t7jvf" path="res://ui/Assets/BG1.png" id="2_bg"]
+[ext_resource type="FontFile" uid="uid://bp8r4erko0xba" path="res://assets/Fonts/IMFeENrm29P.ttf" id="3_font"]
+[ext_resource type="Texture2D" uid="uid://deyws5ijmnqmg" path="res://ui/Assets/text place.png" id="6_textplace"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_title"]
+font = ExtResource("3_font")
+font_color = Color(0.83137256, 0.5882353, 0.19607843, 1)
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 3
+shadow_color = Color(0, 0, 0, 0.44)
+shadow_offset = Vector2(0.51, 1)
+
+[sub_resource type="StyleBoxTexture" id="SBT_input_normal"]
+content_margin_left = 6.0
+content_margin_top = 2.0
+content_margin_right = 6.0
+content_margin_bottom = 2.0
+texture = ExtResource("6_textplace")
+
+[sub_resource type="StyleBoxTexture" id="SBT_input_focus"]
+content_margin_left = 6.0
+content_margin_top = 2.0
+content_margin_right = 6.0
+content_margin_bottom = 2.0
+texture = ExtResource("6_textplace")
+
+[node name="LogPanel" type="Control" unique_id=794429391]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -260.0
+offset_top = -350.0
+offset_right = -4.0
+offset_bottom = -4.0
+grow_horizontal = 0
+grow_vertical = 0
+mouse_filter = 2
+script = ExtResource("1_logpanel")
+
+[node name="Panel" type="Control" parent="." unique_id=208369024]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 1
+
+[node name="BG" type="NinePatchRect" parent="Panel" unique_id=1313467567]
+layout_mode = 0
+offset_right = 256.0
+offset_bottom = 346.0
+texture = ExtResource("2_bg")
+patch_margin_left = 88
+patch_margin_top = 64
+patch_margin_right = 89
+patch_margin_bottom = 62
+
+[node name="Title" type="Label" parent="Panel" unique_id=1177360059]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = 248.0
+offset_bottom = 26.0
+text = "LOG"
+label_settings = SubResource("LabelSettings_title")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel" unique_id=2111789415]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 30.0
+offset_right = 248.0
+offset_bottom = 300.0
+
+[node name="LogList" type="VBoxContainer" parent="Panel/ScrollContainer" unique_id=1866172937]
+custom_minimum_size = Vector2(230, 260)
+layout_mode = 2
+
+[node name="ChatInput" type="LineEdit" parent="Panel" unique_id=592804994]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 306.0
+offset_right = 248.0
+offset_bottom = 338.0
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("SBT_input_normal")
+theme_override_styles/focus = SubResource("SBT_input_focus")
+placeholder_text = "Chat..."

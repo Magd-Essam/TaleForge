@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://svirkuyf4nst"]
+
+[ext_resource type="Script" uid="uid://qt2qi1p3snyw" path="res://ui/context_menu.gd" id="1_ambon"]
+
+[node name="ContextMenu" type="Control" unique_id=989625331]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 180.0
+offset_bottom = 220.0
+mouse_filter = 1
+script = ExtResource("1_ambon")
+
+[node name="BtnEdit" type="Button" parent="." unique_id=1583336561]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 172.0
+offset_bottom = 40.0
+text = "Edit Token"
+
+[node name="BtnDelete" type="Button" parent="." unique_id=2094958603]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 44.0
+offset_right = 172.0
+offset_bottom = 76.0
+text = "Delete"
+
+[node name="BtnCycleWall" type="Button" parent="." unique_id=239358901]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 80.0
+offset_right = 172.0
+offset_bottom = 112.0
+text = "Toggle Door/Window"
+
+[node name="BtnConditions" type="Button" parent="." unique_id=2100000012]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 116.0
+offset_right = 172.0
+offset_bottom = 148.0
+text = "Conditions"
+
+[node name="PopupConditions" type="PopupMenu" parent="." unique_id=2100000013]
+visible = false
+allow_search = true
+
+[node name="LabelSize" type="Label" parent="." unique_id=360434970]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 156.0
+offset_right = 172.0
+offset_bottom = 180.0
+text = "Size: 1.0"
+
+[node name="SliderSize" type="HSlider" parent="." unique_id=980136992]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 180.0
+offset_right = 172.0
+offset_bottom = 204.0
+min_value = 0.2
+max_value = 3.0
+step = 0.1
+value = 1.0

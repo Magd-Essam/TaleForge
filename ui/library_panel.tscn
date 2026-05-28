@@ -1,0 +1,710 @@
+[gd_scene format=3 uid="uid://b7l2redgcrkcj"]
+
+[ext_resource type="Script" uid="uid://crb5u0slnj4py" path="res://ui/library_panel.gd" id="1_ms0dw"]
+[ext_resource type="Texture2D" uid="uid://vodfkm7t7jvf" path="res://ui/Assets/BG1.png" id="2_b4fn3"]
+[ext_resource type="FontFile" uid="uid://bp8r4erko0xba" path="res://assets/Fonts/IMFeENrm29P.ttf" id="2_h4oat"]
+[ext_resource type="Texture2D" uid="uid://dy8340kb2ex5y" path="res://ui/Assets/Tab rect.png" id="2_wxrmr"]
+[ext_resource type="Texture2D" uid="uid://uksp4jwiioc3" path="res://ui/Assets/Button Idle.png" id="3_p2i08"]
+[ext_resource type="Texture2D" uid="uid://gqe8imbr3j7" path="res://ui/Assets/Button Hover.png" id="4_r5ibt"]
+[ext_resource type="Texture2D" uid="uid://ciqe8m1ui3byw" path="res://ui/Assets/But1 idle.png" id="5_r5ibt"]
+[ext_resource type="Texture2D" uid="uid://b8ayjxy7mon0" path="res://ui/Assets/Bar Idle.png" id="6_5p0t6"]
+[ext_resource type="Texture2D" uid="uid://drlifuss20oyx" path="res://ui/Assets/But1 hover.png" id="6_wxrmr"]
+[ext_resource type="Texture2D" uid="uid://lf1v630l0yii" path="res://ui/Assets/Bar hover.png" id="7_t358p"]
+[ext_resource type="LabelSettings" uid="uid://evj53jagim6d" path="res://assets/Fonts/new_label_settings.tres" id="8_lbead"]
+[ext_resource type="Texture2D" uid="uid://df4jm008ju0xm" path="res://ui/Assets/arrow right.png" id="8_tn87c"]
+[ext_resource type="Texture2D" uid="uid://cngpbltnecyny" path="res://ui/Assets/tab idle.png" id="8_wmuxq"]
+[ext_resource type="Texture2D" uid="uid://ct0yx6lglcf6j" path="res://ui/Assets/arrow left.png" id="9_jmhng"]
+[ext_resource type="Texture2D" uid="uid://ccgoov5tidin8" path="res://ui/Assets/tab act.png" id="9_ngc2q"]
+[ext_resource type="Texture2D" uid="uid://24numa6u4jld" path="res://ui/Assets/slider icon.png" id="10_fijwm"]
+[ext_resource type="Texture2D" uid="uid://du4erxxepvxob" path="res://ui/Assets/Slider.png" id="10_lbead"]
+[ext_resource type="Texture2D" uid="uid://bw70i0smedgkh" path="res://ui/Assets/color pick.png" id="11_b4fn3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wxrmr"]
+texture = ExtResource("3_p2i08")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cwqsh"]
+texture = ExtResource("4_r5ibt")
+modulate_color = Color(0.85814106, 0.85814106, 0.85814106, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wmuxq"]
+texture = ExtResource("4_r5ibt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ngc2q"]
+texture = ExtResource("3_p2i08")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y8dei"]
+texture = ExtResource("4_r5ibt")
+modulate_color = Color(0.85814106, 0.85814106, 0.85814106, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tn87c"]
+texture = ExtResource("4_r5ibt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jmhng"]
+texture = ExtResource("3_p2i08")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fijwm"]
+texture = ExtResource("4_r5ibt")
+modulate_color = Color(0.85814106, 0.85814106, 0.85814106, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5p0t6"]
+texture = ExtResource("4_r5ibt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t358p"]
+texture = ExtResource("6_5p0t6")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lbead"]
+texture = ExtResource("7_t358p")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+modulate_color = Color(0.85814106, 0.85814106, 0.85814106, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b4fn3"]
+texture = ExtResource("7_t358p")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8b302"]
+texture = ExtResource("10_lbead")
+texture_margin_top = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vp3qa"]
+texture = ExtResource("10_lbead")
+modulate_color = Color(2.4075916, 1.801329, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ed8pk"]
+texture = ExtResource("10_lbead")
+modulate_color = Color(4.332839, 3.169507, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t8g6d"]
+texture = ExtResource("11_b4fn3")
+expand_margin_left = 6.0
+expand_margin_top = 7.0
+expand_margin_right = 6.0
+expand_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jjmqr"]
+texture = ExtResource("11_b4fn3")
+expand_margin_left = 6.0
+expand_margin_top = 7.0
+expand_margin_right = 6.0
+expand_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m8gu0"]
+texture = ExtResource("11_b4fn3")
+expand_margin_left = 6.0
+expand_margin_top = 7.0
+expand_margin_right = 6.0
+expand_margin_bottom = 8.0
+modulate_color = Color(0.9974834, 0.9974834, 0.9974834, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_new6m"]
+texture = ExtResource("6_5p0t6")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8w4hx"]
+texture = ExtResource("7_t358p")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+modulate_color = Color(0.85814106, 0.85814106, 0.85814106, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_263b0"]
+texture = ExtResource("7_t358p")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vq3up"]
+texture = ExtResource("5_r5ibt")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_20pdc"]
+texture = ExtResource("6_wxrmr")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+modulate_color = Color(0.85814106, 0.85814106, 0.85814106, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v7fm7"]
+texture = ExtResource("6_wxrmr")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_abggb"]
+texture = ExtResource("5_r5ibt")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_etrf8"]
+texture = ExtResource("6_wxrmr")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+modulate_color = Color(0.85814106, 0.85814106, 0.85814106, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_28fo7"]
+texture = ExtResource("6_wxrmr")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fa13y"]
+texture = ExtResource("10_lbead")
+texture_margin_top = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_snwrq"]
+texture = ExtResource("10_lbead")
+modulate_color = Color(2.4075916, 1.7546934, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vy6tk"]
+texture = ExtResource("10_lbead")
+modulate_color = Color(4.332839, 3.169507, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_60up7"]
+texture = ExtResource("11_b4fn3")
+texture_margin_left = 6.0
+texture_margin_top = 7.0
+texture_margin_right = 6.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x87ea"]
+texture = ExtResource("11_b4fn3")
+texture_margin_left = 6.0
+texture_margin_top = 7.0
+texture_margin_right = 6.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u4c1h"]
+texture = ExtResource("11_b4fn3")
+texture_margin_left = 6.0
+texture_margin_top = 7.0
+texture_margin_right = 6.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ywmcw"]
+texture = ExtResource("6_5p0t6")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_23txr"]
+texture = ExtResource("7_t358p")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+modulate_color = Color(0.85814106, 0.85814106, 0.85814106, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_72eg2"]
+texture = ExtResource("7_t358p")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hc0ac"]
+texture = ExtResource("3_p2i08")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n4pmr"]
+texture = ExtResource("4_r5ibt")
+modulate_color = Color(0.85814106, 0.85814106, 0.85814106, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l6goe"]
+texture = ExtResource("4_r5ibt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nbppw"]
+texture = ExtResource("3_p2i08")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fko8o"]
+texture = ExtResource("4_r5ibt")
+modulate_color = Color(0.85814106, 0.85814106, 0.85814106, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gxvwm"]
+texture = ExtResource("4_r5ibt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j24tr"]
+texture = ExtResource("3_p2i08")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l8imx"]
+texture = ExtResource("4_r5ibt")
+modulate_color = Color(0.85814106, 0.85814106, 0.85814106, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_swao1"]
+texture = ExtResource("4_r5ibt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g2jg8"]
+texture = ExtResource("3_p2i08")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_43xep"]
+texture = ExtResource("4_r5ibt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5x78j"]
+texture = ExtResource("4_r5ibt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xt6aj"]
+texture = ExtResource("2_wxrmr")
+texture_margin_top = 40.0
+texture_margin_bottom = 40.0
+axis_stretch_horizontal = 2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dh383"]
+content_margin_left = 3.0
+content_margin_right = 3.0
+texture = ExtResource("8_wmuxq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7y6im"]
+texture = ExtResource("8_wmuxq")
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+modulate_color = Color(1.353256, 1.353256, 1.353256, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b8c2i"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+texture = ExtResource("9_ngc2q")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ot746"]
+texture = ExtResource("6_5p0t6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w04py"]
+texture = ExtResource("7_t358p")
+modulate_color = Color(0.85814106, 0.85814106, 0.85814106, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8dq2u"]
+texture = ExtResource("7_t358p")
+
+[node name="LibraryPanel" type="Control" unique_id=772314110]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 13.0
+offset_top = 6.0
+offset_right = 262.0
+offset_bottom = 596.0
+script = ExtResource("1_ms0dw")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=2071221651]
+clip_contents = true
+layout_mode = 0
+offset_left = -11.0
+offset_top = -5.0
+offset_right = 251.0
+offset_bottom = 892.0
+texture = ExtResource("2_b4fn3")
+patch_margin_left = 80
+patch_margin_top = 64
+patch_margin_right = 80
+patch_margin_bottom = 64
+
+[node name="MoveBtn" type="Button" parent="." unique_id=1099112130]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 25.0
+offset_right = 106.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0.98039216, 0.7058824, 0, 1)
+theme_override_fonts/font = ExtResource("2_h4oat")
+theme_override_styles/normal = SubResource("StyleBoxTexture_wxrmr")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cwqsh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_wmuxq")
+text = "Move"
+
+[node name="DemolishBtn" type="Button" parent="." unique_id=287235408]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 25.0
+offset_right = 212.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0.98039216, 0.7058824, 0, 1)
+theme_override_fonts/font = ExtResource("2_h4oat")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ngc2q")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_y8dei")
+theme_override_styles/hover = SubResource("StyleBoxTexture_tn87c")
+text = "Demolish"
+
+[node name="SelectBtn" type="Button" parent="." unique_id=2100000014]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 63.0
+offset_right = 212.0
+offset_bottom = 94.0
+text = "Select"
+
+[node name="SnapBtn" type="Button" parent="." unique_id=734783159]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 63.0
+offset_right = 106.0
+offset_bottom = 94.0
+theme_override_colors/font_color = Color(0.98039216, 0.7058824, 0, 1)
+theme_override_fonts/font = ExtResource("2_h4oat")
+theme_override_styles/normal = SubResource("StyleBoxTexture_jmhng")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fijwm")
+theme_override_styles/hover = SubResource("StyleBoxTexture_5p0t6")
+text = "Snap ON"
+
+[node name="GridToggle" type="Button" parent="." unique_id=911653716]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 114.0
+offset_right = 222.0
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(0.98039216, 0.7058824, 0, 1)
+theme_override_fonts/font = ExtResource("2_h4oat")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_t358p")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_lbead")
+theme_override_styles/hover = SubResource("StyleBoxTexture_b4fn3")
+text = "Grid Settings"
+
+[node name="LabelGridSize" type="Label" parent="." unique_id=426795393]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 152.0
+offset_right = 212.0
+offset_bottom = 176.0
+text = "Grid Size: 20"
+label_settings = ExtResource("8_lbead")
+
+[node name="SliderGridSize" type="HSlider" parent="." unique_id=979213865]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 182.0
+offset_right = 212.0
+offset_bottom = 206.0
+theme_override_icons/grabber = ExtResource("10_fijwm")
+theme_override_icons/grabber_highlight = ExtResource("10_fijwm")
+theme_override_styles/slider = SubResource("StyleBoxTexture_8b302")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_vp3qa")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_ed8pk")
+min_value = 10.0
+max_value = 80.0
+step = 2.0
+page = 2.0
+value = 20.0
+rounded = true
+
+[node name="LabelGridColor" type="Label" parent="." unique_id=1033128761]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 212.0
+offset_right = 212.0
+offset_bottom = 236.0
+text = "Grid Color"
+label_settings = ExtResource("8_lbead")
+
+[node name="ColorGridColor" type="ColorPickerButton" parent="." unique_id=1030118401]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 242.0
+offset_right = 205.0
+offset_bottom = 266.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_t8g6d")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_jjmqr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_m8gu0")
+color = Color(0.83, 0.63, 0.1, 0.5)
+
+[node name="FogToggle" type="Button" parent="." unique_id=638783188]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 156.0
+offset_right = 222.0
+offset_bottom = 186.0
+theme_override_colors/font_color = Color(0.98039216, 0.7058824, 0, 1)
+theme_override_fonts/font = ExtResource("2_h4oat")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_new6m")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_8w4hx")
+theme_override_styles/hover = SubResource("StyleBoxTexture_263b0")
+text = "Fog Settings"
+
+[node name="BtnFogToggle" type="Button" parent="." unique_id=364194263]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 194.0
+offset_right = 106.0
+offset_bottom = 224.0
+theme_override_colors/font_color = Color(0.98039216, 0.7058824, 0, 1)
+theme_override_fonts/font = ExtResource("2_h4oat")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_vq3up")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_20pdc")
+theme_override_styles/hover = SubResource("StyleBoxTexture_v7fm7")
+text = "Fog ON"
+
+[node name="BtnGmToggle" type="Button" parent="." unique_id=496937615]
+visible = false
+layout_mode = 0
+offset_left = 114.0
+offset_top = 194.0
+offset_right = 212.0
+offset_bottom = 224.0
+theme_override_colors/font_color = Color(0.98039216, 0.7058824, 0, 1)
+theme_override_fonts/font = ExtResource("2_h4oat")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_abggb")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_etrf8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_28fo7")
+text = "GM Mode"
+
+[node name="LabelVisionRadius" type="Label" parent="." unique_id=809520803]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 230.0
+offset_right = 212.0
+offset_bottom = 252.0
+text = "Vision Radius"
+label_settings = ExtResource("8_lbead")
+
+[node name="SliderVisionRadius" type="HSlider" parent="." unique_id=158802884]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 258.0
+offset_right = 212.0
+offset_bottom = 282.0
+theme_override_icons/grabber = ExtResource("10_fijwm")
+theme_override_icons/grabber_highlight = ExtResource("10_fijwm")
+theme_override_styles/slider = SubResource("StyleBoxTexture_fa13y")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_snwrq")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_vy6tk")
+min_value = 1.0
+max_value = 15.0
+step = 0.5
+value = 5.0
+
+[node name="LabelFeather" type="Label" parent="." unique_id=2090521131]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 288.0
+offset_right = 212.0
+offset_bottom = 310.0
+text = "Feather"
+label_settings = ExtResource("8_lbead")
+
+[node name="SliderFeather" type="HSlider" parent="." unique_id=914365677]
+visible = false
+layout_mode = 0
+offset_left = 16.0
+offset_top = 516.0
+offset_right = 220.0
+offset_bottom = 540.0
+theme_override_icons/grabber = ExtResource("10_fijwm")
+theme_override_icons/grabber_highlight = ExtResource("10_fijwm")
+theme_override_styles/slider = SubResource("StyleBoxTexture_fa13y")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_snwrq")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_vy6tk")
+min_value = 1.0
+max_value = 15.0
+step = 0.5
+value = 5.0
+
+[node name="LabelDarkness" type="Label" parent="." unique_id=1206896771]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 346.0
+offset_right = 212.0
+offset_bottom = 368.0
+text = "Darkness"
+label_settings = ExtResource("8_lbead")
+
+[node name="SliderDarkness" type="HSlider" parent="." unique_id=1547875853]
+visible = false
+layout_mode = 0
+offset_left = 24.0
+offset_top = 862.0
+offset_right = 228.0
+offset_bottom = 886.0
+theme_override_icons/grabber = ExtResource("10_fijwm")
+theme_override_icons/grabber_highlight = ExtResource("10_fijwm")
+theme_override_styles/slider = SubResource("StyleBoxTexture_fa13y")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_snwrq")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_vy6tk")
+min_value = 1.0
+max_value = 15.0
+step = 0.5
+value = 5.0
+
+[node name="LabelFogColor" type="Label" parent="." unique_id=224108285]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 404.0
+offset_right = 212.0
+offset_bottom = 426.0
+text = "Fog Color"
+label_settings = ExtResource("8_lbead")
+
+[node name="ColorFogColor" type="ColorPickerButton" parent="." unique_id=1898884642]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 432.0
+offset_right = 212.0
+offset_bottom = 464.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_60up7")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_x87ea")
+theme_override_styles/hover = SubResource("StyleBoxTexture_u4c1h")
+
+[node name="TerraToggle" type="Button" parent="." unique_id=636909581]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 198.0
+offset_right = 222.0
+offset_bottom = 228.0
+theme_override_colors/font_color = Color(0.98039216, 0.7058824, 0, 1)
+theme_override_fonts/font = ExtResource("2_h4oat")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_ywmcw")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_23txr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_72eg2")
+text = "Terrain Blocks"
+
+[node name="BtnTerraActivate" type="Button" parent="." unique_id=440124390]
+visible = false
+layout_mode = 0
+offset_left = 69.0
+offset_top = 236.0
+offset_right = 172.0
+offset_bottom = 266.0
+theme_override_colors/font_color = Color(0.98039216, 0.7058824, 0, 1)
+theme_override_fonts/font = ExtResource("2_h4oat")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_hc0ac")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_n4pmr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_l6goe")
+text = "Terrain OFF"
+
+[node name="BtnTerraPlace" type="Button" parent="." unique_id=1467744289]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 272.0
+offset_right = 70.0
+offset_bottom = 302.0
+theme_override_colors/font_color = Color(0.98039216, 0.7058824, 0, 1)
+theme_override_fonts/font = ExtResource("2_h4oat")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_nbppw")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fko8o")
+theme_override_styles/hover = SubResource("StyleBoxTexture_gxvwm")
+text = "Place"
+
+[node name="BtnTerraDrag" type="Button" parent="." unique_id=1379345465]
+visible = false
+layout_mode = 0
+offset_left = 76.0
+offset_top = 272.0
+offset_right = 138.0
+offset_bottom = 302.0
+theme_override_colors/font_color = Color(0.98039216, 0.7058824, 0, 1)
+theme_override_fonts/font = ExtResource("2_h4oat")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_j24tr")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_l8imx")
+theme_override_styles/hover = SubResource("StyleBoxTexture_swao1")
+text = "Drag"
+
+[node name="BtnTerraRemove" type="Button" parent="." unique_id=314716940]
+visible = false
+layout_mode = 0
+offset_left = 146.0
+offset_top = 272.0
+offset_right = 212.0
+offset_bottom = 302.0
+theme_override_colors/font_color = Color(0.98039216, 0.7058824, 0, 1)
+theme_override_fonts/font = ExtResource("2_h4oat")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_g2jg8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_43xep")
+theme_override_styles/hover = SubResource("StyleBoxTexture_5x78j")
+text = "Remove"
+
+[node name="TabContainer" type="TabContainer" parent="." unique_id=493711884]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 305.0
+offset_right = 242.0
+offset_bottom = 699.0
+theme_override_colors/font_selected_color = Color(0.98039216, 0.7058824, 0, 1)
+theme_override_colors/font_hovered_color = Color(0.84116983, 0.60357153, 0, 1)
+theme_override_colors/font_unselected_color = Color(0.5854992, 0.47876284, 0.30410329, 1)
+theme_override_constants/side_margin = 0
+theme_override_constants/tab_separation = 4
+theme_override_fonts/font = ExtResource("2_h4oat")
+theme_override_font_sizes/font_size = 13
+theme_override_icons/increment = ExtResource("8_tn87c")
+theme_override_icons/increment_highlight = ExtResource("8_tn87c")
+theme_override_icons/decrement = ExtResource("9_jmhng")
+theme_override_icons/decrement_highlight = ExtResource("9_jmhng")
+theme_override_icons/drop_mark = ExtResource("10_fijwm")
+theme_override_styles/panel = SubResource("StyleBoxTexture_xt6aj")
+theme_override_styles/tab_unselected = SubResource("StyleBoxTexture_dh383")
+theme_override_styles/tab_hovered = SubResource("StyleBoxTexture_7y6im")
+theme_override_styles/tab_selected = SubResource("StyleBoxTexture_b8c2i")
+current_tab = 1
+
+[node name="Tokens" type="ScrollContainer" parent="TabContainer" unique_id=1885027638]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="TokensList" type="GridContainer" parent="TabContainer/Tokens" unique_id=442969980]
+layout_mode = 2
+columns = 2
+
+[node name="Props" type="ScrollContainer" parent="TabContainer" unique_id=1850995532]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="PropsList" type="GridContainer" parent="TabContainer/Props" unique_id=1126762680]
+layout_mode = 2
+columns = 2
+
+[node name="Walls" type="ScrollContainer" parent="TabContainer" unique_id=1522856334]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="WallsList" type="GridContainer" parent="TabContainer/Walls" unique_id=668668971]
+layout_mode = 2
+
+[node name="Floors" type="ScrollContainer" parent="TabContainer" unique_id=1652652591]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="FloorsList" type="GridContainer" parent="TabContainer/Floors" unique_id=1178382738]
+layout_mode = 2
+
+[node name="Nature" type="ScrollContainer" parent="TabContainer" unique_id=1485394904]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 4
+
+[node name="NatureList" type="GridContainer" parent="TabContainer/Nature" unique_id=435481602]
+layout_mode = 2
+
+[node name="Monsters" type="ScrollContainer" parent="TabContainer" unique_id=509095695]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 5
+
+[node name="MonstersList" type="GridContainer" parent="TabContainer/Monsters" unique_id=1205996130]
+layout_mode = 2
+
+[node name="BtnImport" type="Button" parent="." unique_id=1208313026]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 705.0
+offset_right = 231.0
+offset_bottom = 740.0
+theme_override_colors/font_color = Color(0.98039216, 0.7058824, 0, 1)
+theme_override_fonts/font = ExtResource("2_h4oat")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ot746")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_w04py")
+theme_override_styles/hover = SubResource("StyleBoxTexture_8dq2u")
+text = "Import Asset"

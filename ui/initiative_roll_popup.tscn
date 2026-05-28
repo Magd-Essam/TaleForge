@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://df8jy2lk6cp7q"]
+
+[ext_resource type="Script" path="res://ui/initiative_roll_popup.gd" id="1_gd"]
+[ext_resource type="Texture2D" uid="uid://vodfkm7t7jvf" path="res://ui/Assets/BG1.png" id="2_bg"]
+
+[node name="InitiativeRollPopup" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 1
+script = ExtResource("1_gd")
+
+[node name="Overlay" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.6)
+mouse_filter = 1
+
+[node name="Panel" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 320.0
+offset_right = 700.0
+offset_bottom = 560.0
+texture = ExtResource("2_bg")
+
+[node name="TitleLabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 8.0
+offset_right = 200.0
+offset_bottom = 28.0
+theme_override_font_sizes/font_size = 12
+text = "Roll Initiative"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 32.0
+offset_right = -8.0
+offset_bottom = -44.0
+scroll_horizontal_enabled = false
+scroll_vertical_enabled = true
+
+[node name="EntryList" type="VBoxContainer" parent="Panel/ScrollContainer"]
+layout_mode = 0
+offset_right = 584.0
+size_flags_horizontal = 3
+
+[node name="BtnRow" type="HBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = -38.0
+offset_right = -8.0
+offset_bottom = -8.0
+
+[node name="RollAllBtn" type="Button" parent="Panel/BtnRow"]
+layout_mode = 0
+offset_right = 140.0
+offset_bottom = 30.0
+focus_mode = 0
+text = "Roll All Players"
+
+[node name="StartBtn" type="Button" parent="Panel/BtnRow"]
+layout_mode = 0
+offset_left = 150.0
+offset_right = 320.0
+offset_bottom = 30.0
+focus_mode = 0
+disabled = true
+text = "Start Combat"

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cbenvgy1la3sb"]
+
+[ext_resource type="Script" uid="uid://dkrg88ijgyrw8" path="res://terrain/pieces/floor_tile.gd" id="1_1qbt3"]
+[ext_resource type="PackedScene" uid="uid://dxgpg0s0bf5d4" path="res://terrain/pieces/floor_grass.glb" id="1_53dut"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qxmlo"]
+size = Vector3(1, 0.1, 1)
+
+[node name="FloorTile" unique_id=454859452 instance=ExtResource("1_53dut")]
+script = ExtResource("1_1qbt3")
+
+[node name="Cube" parent="." index="0" unique_id=365644749]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0032969043, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1662674223]
+shape = SubResource("BoxShape3D_qxmlo")

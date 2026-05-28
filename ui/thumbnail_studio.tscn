@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://q38lwovqb6xy"]
+
+[ext_resource type="Script" path="res://ui/thumbnail_studio.gd" id="1_studio"]
+
+[sub_resource type="Environment" id="Environment_1"]
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.5
+
+[node name="ThumbnailStudio" type="Node3D" unique_id=2136081974]
+script = ExtResource("1_studio")
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=1603103711]
+own_world_3d = true
+transparent_bg = true
+size = Vector2i(256, 256)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewport" unique_id=2039433886]
+transform = Transform3D(0.707107, -0.408248, 0.57735, 0, 0.816497, 0.57735, -0.707107, -0.408248, 0.57735, 10, 10, 10)
+projection = 1
+size = 2.0
+near = 0.1
+far = 100.0
+
+[node name="ModelContainer" type="Node3D" parent="SubViewport" unique_id=990753310]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport" unique_id=520905952]
+transform = Transform3D(0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, -0.75, 0.433013, 0, 5, 0)
+light_energy = 1.2
+shadow_enabled = true
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="SubViewport" unique_id=718845398]
+transform = Transform3D(-0.866025, -0.433013, -0.25, 0, 0.5, -0.866025, 0.5, -0.75, -0.433013, 0, 5, 0)
+light_energy = 0.6
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewport" unique_id=2050666876]
+environment = SubResource("Environment_1")

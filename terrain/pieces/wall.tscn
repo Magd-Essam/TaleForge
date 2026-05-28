@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://72a2ldi3qwkt"]
+
+[ext_resource type="PackedScene" uid="uid://cm3hrgdefipjk" path="res://terrain/pieces/wall.glb" id="1_723x2"]
+[ext_resource type="Script" uid="uid://dod6oavrdiw4v" path="res://terrain/pieces/wall.gd" id="1_si3c3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_obsb7"]
+size = Vector3(1.12, 1, 0.5)
+
+[node name="wall" unique_id=457498167 instance=ExtResource("1_723x2")]
+script = ExtResource("1_si3c3")
+
+[node name="Cube_003__0" parent="." index="0" unique_id=203398159]
+transform = Transform3D(0.3579661, 0, 0, 0, -6.8954755e-08, 0.48681238, 0, -0.19281144, -1.7409769e-07, 0, -0.50932896, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=43802920]
+shape = SubResource("BoxShape3D_obsb7")

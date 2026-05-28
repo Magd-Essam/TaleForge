@@ -1,0 +1,128 @@
+[gd_scene format=3 uid="uid://d3tnxq2gk2sj7"]
+
+[ext_resource type="Script" uid="uid://df34j8fw4vset" path="res://ui/initiative_panel.gd" id="1_gd"]
+[ext_resource type="FontFile" uid="uid://bp8r4erko0xba" path="res://assets/Fonts/IMFeENrm29P.ttf" id="2_3ltd0"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f8njy"]
+load_path = "res://.godot/imported/BG1.png-62ffa36b09d283c794d8bf1ccd74223c.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_hgu18"]
+font = ExtResource("2_3ltd0")
+font_size = 19
+font_color = Color(0.83137256, 0.5882353, 0.19607843, 1)
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 4
+shadow_color = Color(0, 0, 0, 0.4392157)
+shadow_offset = Vector2(0.51, 1)
+
+[node name="InitiativePanel" type="Control" unique_id=323560845]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_bottom = 120.0
+grow_horizontal = 2
+mouse_filter = 1
+script = ExtResource("1_gd")
+
+[node name="Bg" type="NinePatchRect" parent="." unique_id=1912914863]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -263.0
+offset_right = 263.0
+offset_bottom = 128.0
+grow_horizontal = 2
+texture = SubResource("CompressedTexture2D_f8njy")
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="TitleLabel" type="Label" parent="." unique_id=1479989781]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -148.0
+offset_top = 12.0
+offset_right = 105.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 11
+text = "INITIATIVE — Round 1"
+label_settings = SubResource("LabelSettings_hgu18")
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1959844704]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -25.0
+offset_right = 4.0
+offset_bottom = 27.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="TurnBox" type="HBoxContainer" parent="ScrollContainer" unique_id=1959423066]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="RollBtn" type="Button" parent="." unique_id=829044377]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -235.0
+offset_top = -36.0
+offset_right = -119.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+text = "Roll Initiative"
+
+[node name="EndTurnBtn" type="Button" parent="." unique_id=765554111]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -37.0
+offset_right = -20.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+text = "End Turn"
+
+[node name="EndCombatBtn" type="Button" parent="." unique_id=490213726]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 85.0
+offset_right = 108.0
+offset_bottom = 116.0
+focus_mode = 0
+text = "End Combat"
+
+[node name="AddBtn" type="Button" parent="." unique_id=1203522815]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 86.0
+offset_right = 251.0
+offset_bottom = 117.0
+focus_mode = 0
+text = "Add to Combat"

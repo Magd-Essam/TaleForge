@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c47uvyrkpaokk"]
+
+[ext_resource type="Script" uid="uid://dkrg88ijgyrw8" path="res://terrain/pieces/floor_tile.gd" id="1_53dht"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_k2sg1"]
+size = Vector3(1, 0.1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m74bs"]
+transparency = 1
+albedo_color = Color(0.039215688, 0.20392157, 0.27450982, 0.27450982)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m74bs"]
+size = Vector3(1, 0.1, 1)
+
+[node name="FloorTile" type="StaticBody3D" unique_id=33894085]
+script = ExtResource("1_53dht")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=205138201]
+mesh = SubResource("BoxMesh_k2sg1")
+surface_material_override/0 = SubResource("StandardMaterial3D_m74bs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=612671964]
+shape = SubResource("BoxShape3D_m74bs")

@@ -1,0 +1,317 @@
+[gd_scene format=3 uid="uid://0jpkdben81jh"]
+
+[ext_resource type="Script" uid="uid://d2xwagsydweyu" path="res://world.gd" id="1_hiqwa"]
+[ext_resource type="Texture2D" uid="uid://b4lwy7dh1bn50" path="res://assets/Texture/BaseFloor/Asphalt025C_2K-JPG_Color.jpg" id="2_4h6ng"]
+[ext_resource type="Environment" uid="uid://dgttkso2hg1lc" path="res://vtt_env.tres" id="2_o3ebs"]
+[ext_resource type="Script" uid="uid://kn4aukqp4qpj" path="res://camera.gd" id="3_2u3nc"]
+[ext_resource type="Texture2D" uid="uid://du4splh7xj4px" path="res://assets/Texture/BaseFloor/Asphalt025C_2K-JPG_AmbientOcclusion.jpg" id="3_o3ebs"]
+[ext_resource type="Script" uid="uid://cv1i4tsu7urbi" path="res://grid.gd" id="4_2u3nc"]
+[ext_resource type="Texture2D" uid="uid://5clbyfpkbpwi" path="res://assets/Texture/BaseFloor/Asphalt025C_2K-JPG_NormalGL.jpg" id="4_k83mh"]
+[ext_resource type="PackedScene" uid="uid://b7l2redgcrkcj" path="res://ui/library_panel.tscn" id="5_036b0"]
+[ext_resource type="PackedScene" uid="uid://svirkuyf4nst" path="res://ui/context_menu.tscn" id="5_dwbse"]
+[ext_resource type="Texture2D" uid="uid://duumbmicd38h1" path="res://assets/Texture/BaseFloor/Asphalt025C_2K-JPG_Roughness.jpg" id="5_qktwf"]
+[ext_resource type="Script" uid="uid://dv7i040jg658t" path="res://ui.gd" id="5_udxuc"]
+[ext_resource type="PackedScene" uid="uid://mus4bfp2rjlg" path="res://ui/dice_panel.tscn" id="7_pkg7o"]
+[ext_resource type="PackedScene" uid="uid://cmrjj0fqcq518" path="res://ui/token_editor.tscn" id="8_gbfbk"]
+[ext_resource type="PackedScene" uid="uid://q38lwovqb6xy" path="res://ui/thumbnail_studio.tscn" id="10_studio"]
+[ext_resource type="Script" uid="uid://c0yp78wwuqdt0" path="res://fog_of_war.gd" id="10_udxuc"]
+[ext_resource type="Script" uid="uid://c4o4f8vbf6i73" path="res://Scripts/modular_terraform_manager.gd" id="12_modular_terraform"]
+[ext_resource type="Script" uid="uid://0d062fvc2qew" path="res://Scripts/input_handler.gd" id="13_udxuc"]
+[ext_resource type="Script" uid="uid://c61q5d35i57jo" path="res://Scripts/terrain_placer.gd" id="14_ikiii"]
+[ext_resource type="Script" uid="uid://3uh58xok0ltc" path="res://Scripts/token_manager.gd" id="15_cbp6q"]
+[ext_resource type="Script" uid="uid://dj17v1g42fj3j" path="res://Scripts/drag_controller.gd" id="16_26xuy"]
+[ext_resource type="Script" uid="uid://dfjxrd2k5ue01" path="res://Scripts/selection_manager.gd" id="17_bc84e"]
+[ext_resource type="Script" uid="uid://bssedcsrtppe5" path="res://Scripts/prop_placer.gd" id="18_prop"]
+[ext_resource type="Script" uid="uid://dsos8emswtuu" path="res://Scripts/ruler_manager.gd" id="19_ruler"]
+[ext_resource type="Script" uid="uid://d3eb53nkjbnhd" path="res://Scripts/aoe_manager.gd" id="20_aoe"]
+[ext_resource type="Script" uid="uid://p3k07apxs0rj" path="res://ui/tool_panel.gd" id="21_toolpanel"]
+[ext_resource type="Script" uid="uid://bl1uuwnucix0d" path="res://Scripts/network_manager.gd" id="22_nm"]
+[ext_resource type="PackedScene" uid="uid://lobby" path="res://ui/lobby.tscn" id="23_lobby"]
+[ext_resource type="PackedScene" uid="uid://cwr80s8h2p62x" path="res://ui/player_window.tscn" id="23_player"]
+[ext_resource type="Script" uid="uid://boempg400aci1" path="res://Scripts/tile_fusion.gd" id="26_tile_fusion"]
+[ext_resource type="Script" uid="uid://cugivalewxbmm" path="res://Scripts/slab_manager.gd" id="27_slab"]
+[ext_resource type="Script" uid="uid://dscpgmnl3iroq" path="res://Scripts/slab_codec.gd" id="28_slab_codec"]
+[ext_resource type="Script" uid="uid://h3gxytqluwrw" path="res://Scripts/floor_manager.gd" id="29_floor"]
+[ext_resource type="Script" uid="uid://cuo6jrfkyg0ve" path="res://Scripts/layer_slider.gd" id="30_layer"]
+[ext_resource type="Script" uid="uid://d2sfrxcxab5xy" path="res://Scripts/water_slider.gd" id="31_water"]
+[ext_resource type="Script" uid="uid://2lt3jocjnuu7" path="res://Scripts/movement_controller.gd" id="33_move"]
+[ext_resource type="Script" uid="uid://cfupbflbhfjj" path="res://Scripts/initiative_tracker.gd" id="34_init"]
+[ext_resource type="PackedScene" uid="uid://d3tnxq2gk2sj7" path="res://ui/initiative_panel.tscn" id="35_init_panel"]
+[ext_resource type="Script" uid="uid://luq24x0xgq64" path="res://Scripts/point_indicator.gd" id="35_point"]
+[ext_resource type="PackedScene" uid="uid://c6xw3aeo66hmb" path="res://ui/status_panel.tscn" id="37_status"]
+[ext_resource type="PackedScene" uid="uid://di5vyulnww6f5" path="res://ui/exit_menu.tscn" id="38_exitmenu"]
+[ext_resource type="PackedScene" uid="uid://cr4f2q5eojm4e" path="res://ui/settings_panel.tscn" id="39_settings"]
+[ext_resource type="PackedScene" uid="uid://cnfg5exsvgtno" path="res://ui/log_panel.tscn" id="40_logpanel"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bh8nc"]
+albedo_color = Color(0.7666196, 0.76661956, 0.76661956, 1)
+albedo_texture = ExtResource("2_4h6ng")
+roughness = 0.74
+roughness_texture = ExtResource("5_qktwf")
+normal_enabled = true
+normal_texture = ExtResource("4_k83mh")
+ao_enabled = true
+ao_texture = ExtResource("3_o3ebs")
+ao_texture_channel = 4
+uv1_scale = Vector3(100, 100, 100)
+uv1_offset = Vector3(0.505, 0, 0)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gv5m4"]
+material = SubResource("StandardMaterial3D_bh8nc")
+size = Vector2(2000, 2000)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gv5m4"]
+size = Vector3(2000, 0.1, 2000)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_pkg7o"]
+friction = 0.8
+bounce = 0.15
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dwbse"]
+size = Vector3(100, 0.1, 100)
+
+[node name="world" type="Node3D" unique_id=1701305620]
+script = ExtResource("1_hiqwa")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=363006718]
+environment = ExtResource("2_o3ebs")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=508320686]
+transform = Transform3D(0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, -0.75, 0.433013, 0, 10, 0)
+light_color = Color(1, 0.95, 0.9, 1)
+light_energy = 0.6
+shadow_enabled = true
+shadow_blur = 1.5
+directional_shadow_mode = 1
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1888115558]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1968265818]
+mesh = SubResource("PlaneMesh_gv5m4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1873612914]
+shape = SubResource("BoxShape3D_gv5m4")
+
+[node name="NetworkManager" type="Node" parent="." unique_id=720919738]
+script = ExtResource("22_nm")
+
+[node name="Camera" type="Node3D" parent="." unique_id=2081705460]
+script = ExtResource("3_2u3nc")
+
+[node name="Camera3D" type="Camera3D" parent="Camera" unique_id=1209970134]
+transform = Transform3D(1, 0, 0, 0, 0.57357645, 0.81915206, 0, -0.81915206, 0.57357645, 0, 15, 10)
+
+[node name="grid" type="MeshInstance3D" parent="." unique_id=1311555868]
+script = ExtResource("4_2u3nc")
+grid_color = Color(1.0309138, 1.0309138, 1.0309138, 0.6509804)
+line_width = 1.0
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1727250643]
+script = ExtResource("5_udxuc")
+
+[node name="LibraryPanel" parent="UI" unique_id=73458148 instance=ExtResource("5_036b0")]
+
+[node name="LibraryHandle" type="Button" parent="UI/LibraryPanel" unique_id=2100000050]
+layout_mode = 0
+offset_left = 249.0
+offset_right = 273.0
+offset_bottom = 584.0
+focus_mode = 0
+text = "◀"
+
+[node name="ContextMenu" parent="UI" unique_id=46217563 instance=ExtResource("5_dwbse")]
+visible = false
+
+[node name="DicePanel" parent="UI" unique_id=744346183 instance=ExtResource("7_pkg7o")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -536.0
+offset_top = -319.0
+offset_right = -227.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TokenEditor" parent="UI" unique_id=295525378 instance=ExtResource("8_gbfbk")]
+visible = false
+
+[node name="ThumbnailStudio" parent="UI" unique_id=468800619 instance=ExtResource("10_studio")]
+
+[node name="Lobby" parent="UI" unique_id=2064559439 instance=ExtResource("23_lobby")]
+visible = false
+
+[node name="ToolPanel" type="Control" parent="UI" unique_id=1061644855]
+visible = false
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -251.0
+offset_bottom = 205.0
+grow_horizontal = 0
+script = ExtResource("21_toolpanel")
+
+[node name="PlayerWindow" parent="UI" unique_id=287207046 instance=ExtResource("23_player")]
+metadata/_edit_use_anchors_ = true
+
+[node name="PwHandle" type="Button" parent="UI/PlayerWindow" unique_id=2100000051]
+layout_mode = 0
+offset_left = -24.0
+offset_bottom = 294.0
+focus_mode = 0
+text = "▶"
+
+[node name="InitiativePanel" parent="UI" unique_id=2100000007 instance=ExtResource("35_init_panel")]
+anchors_preset = -1
+anchor_bottom = 0.132
+offset_left = 834.2
+offset_top = -1.0
+offset_right = -837.0
+offset_bottom = 0.19999695
+
+[node name="StatusPanel" parent="UI" unique_id=1437972771 instance=ExtResource("37_status")]
+visible = false
+layout_mode = 3
+offset_left = 290.0
+offset_top = 129.0
+offset_right = 480.0
+offset_bottom = 229.0
+
+[node name="ExitMenu" parent="UI" unique_id=366282074 instance=ExtResource("38_exitmenu")]
+visible = false
+
+[node name="LogPanel" parent="UI" unique_id=2100000030 instance=ExtResource("40_logpanel")]
+offset_left = -256.0
+offset_top = -346.0
+offset_right = 0.0
+offset_bottom = 0.0
+
+[node name="LogHandle" type="Button" parent="UI/LogPanel" unique_id=2100000052]
+layout_mode = 0
+offset_left = 192.0
+offset_top = -24.0
+offset_right = 256.0
+focus_mode = 0
+text = "▼"
+
+[node name="SettingsPanel" parent="UI" unique_id=1733118568 instance=ExtResource("39_settings")]
+
+[node name="ReconnectOverlay" type="ColorRect" parent="UI" unique_id=2100000020]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.7)
+
+[node name="Label" type="Label" parent="UI/ReconnectOverlay" unique_id=2100000021]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -30.0
+offset_right = 200.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "Reconnecting..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AttemptLabel" type="Label" parent="UI/ReconnectOverlay" unique_id=2100000022]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = 10.0
+offset_right = 200.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 16
+text = "Attempt 1/10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TerrainHolder" type="Node3D" parent="." unique_id=295181643]
+
+[node name="TokenHolder" type="Node3D" parent="." unique_id=1785521509]
+
+[node name="PropHolder" type="Node3D" parent="." unique_id=1002878702]
+
+[node name="DiceHolder" type="Node3D" parent="." unique_id=222668819]
+
+[node name="DiceFloor" type="StaticBody3D" parent="DiceHolder" unique_id=744778235]
+physics_material_override = SubResource("PhysicsMaterial_pkg7o")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DiceHolder/DiceFloor" unique_id=812696782]
+shape = SubResource("BoxShape3D_dwbse")
+
+[node name="ModularTerraformManager" type="Node3D" parent="." unique_id=2100000000]
+script = ExtResource("12_modular_terraform")
+
+[node name="FogOfWar" type="Node3D" parent="." unique_id=1452773382]
+script = ExtResource("10_udxuc")
+
+[node name="InputHandler" type="Node" parent="." unique_id=1957230554]
+script = ExtResource("13_udxuc")
+
+[node name="TerrainPlacer" type="Node" parent="." unique_id=740441306]
+script = ExtResource("14_ikiii")
+
+[node name="TokenManager" type="Node" parent="." unique_id=1617761873]
+script = ExtResource("15_cbp6q")
+
+[node name="DragController" type="Node" parent="." unique_id=1653200115]
+script = ExtResource("16_26xuy")
+
+[node name="SelectionManager" type="Node" parent="." unique_id=1737268022]
+script = ExtResource("17_bc84e")
+
+[node name="PropPlacer" type="Node" parent="." unique_id=1208678547]
+script = ExtResource("18_prop")
+
+[node name="TileFusion" type="Node" parent="." unique_id=2100000001]
+script = ExtResource("26_tile_fusion")
+
+[node name="SlabManager" type="Node" parent="." unique_id=2100000002]
+script = ExtResource("27_slab")
+
+[node name="SlabManager/SlabCodec" type="Node" parent="." unique_id=2100000003]
+script = ExtResource("28_slab_codec")
+
+[node name="RulerManager" type="Node" parent="." unique_id=1487195950]
+script = ExtResource("19_ruler")
+
+[node name="AoeManager" type="Node3D" parent="." unique_id=1164203347]
+script = ExtResource("20_aoe")
+
+[node name="FloorManager" type="Node" parent="." unique_id=2100000004]
+script = ExtResource("29_floor")
+
+[node name="LayerSlider" type="Node" parent="." unique_id=2100000005]
+script = ExtResource("30_layer")
+
+[node name="WaterSlider" type="Node" parent="." unique_id=2100000006]
+script = ExtResource("31_water")
+
+[node name="MovementController" type="Node" parent="." unique_id=2100000008]
+script = ExtResource("33_move")
+
+[node name="PointIndicator" type="Node3D" parent="." unique_id=1115362815]
+script = ExtResource("35_point")
+
+[node name="InitiativeTracker" type="Node" parent="." unique_id=2100000009]
+script = ExtResource("34_init")

@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://d3fwpm446sjb0"]
+
+[ext_resource type="Script" uid="uid://4pq1j156bw5x" path="res://ui/dice_result.gd" id="1_kiiga"]
+[ext_resource type="Texture2D" uid="uid://vodfkm7t7jvf" path="res://ui/Assets/BG1.png" id="2_wukii"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bwf3v"]
+texture = ExtResource("2_wukii")
+texture_margin_left = 6.0
+texture_margin_right = 6.0
+
+[node name="DiceResult" type="Control" unique_id=608322244]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_kiiga")
+
+[node name="Box" type="PanelContainer" parent="." unique_id=1169472289]
+layout_mode = 0
+offset_right = 184.0
+offset_bottom = 194.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_bwf3v")
+
+[node name="MarginContainer" type="MarginContainer" parent="Box" unique_id=1038923484]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Box/MarginContainer" unique_id=732817467]
+layout_mode = 2
+
+[node name="RollTypeLabel" type="Label" parent="Box/MarginContainer/VBoxContainer" unique_id=374092083]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.83, 0.63, 0.1, 1)
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 1
+
+[node name="ResultLabel" type="Label" parent="Box/MarginContainer/VBoxContainer" unique_id=1235319113]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 96
+horizontal_alignment = 1

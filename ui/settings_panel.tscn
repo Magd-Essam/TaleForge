@@ -1,0 +1,531 @@
+[gd_scene format=3 uid="uid://cr4f2q5eojm4e"]
+
+[ext_resource type="Script" uid="uid://dnpecy71bafk3" path="res://ui/settings_panel.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://vodfkm7t7jvf" path="res://ui/Assets/BG1.png" id="2_bg"]
+[ext_resource type="Texture2D" uid="uid://deyws5ijmnqmg" path="res://ui/Assets/text place.png" id="3_textplace"]
+[ext_resource type="FontFile" uid="uid://bp8r4erko0xba" path="res://assets/Fonts/IMFeENrm29P.ttf" id="4_font"]
+[ext_resource type="Texture2D" uid="uid://b8ayjxy7mon0" path="res://ui/Assets/Bar Idle.png" id="5_baridle"]
+[ext_resource type="Texture2D" uid="uid://lf1v630l0yii" path="res://ui/Assets/Bar hover.png" id="6_barhover"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_title"]
+font = ExtResource("4_font")
+font_size = 36
+font_color = Color(0.83137256, 0.5882353, 0.19607843, 1)
+outline_size = 3
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 6
+shadow_color = Color(0, 0, 0, 0.5)
+shadow_offset = Vector2(0.51, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_section"]
+font = ExtResource("4_font")
+font_size = 22
+font_color = Color(0.83137256, 0.5882353, 0.19607843, 1)
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 4
+shadow_color = Color(0, 0, 0, 0.4)
+shadow_offset = Vector2(0.51, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_label"]
+font = ExtResource("4_font")
+font_size = 18
+font_color = Color(0.7, 0.7, 0.7, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="SBT_input_normal"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+texture = ExtResource("3_textplace")
+
+[sub_resource type="StyleBoxTexture" id="SBT_input_focus"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+texture = ExtResource("3_textplace")
+
+[sub_resource type="LabelSettings" id="LabelSettings_value"]
+font = ExtResource("4_font")
+font_color = Color(0.83137256, 0.5882353, 0.19607843, 1)
+
+[sub_resource type="StyleBoxTexture" id="SBT_btn_normal"]
+texture = ExtResource("5_baridle")
+texture_margin_left = 6.0
+texture_margin_right = 6.0
+
+[sub_resource type="StyleBoxTexture" id="SBT_btn_pressed"]
+texture = ExtResource("6_barhover")
+texture_margin_left = 6.0
+texture_margin_right = 6.0
+modulate_color = Color(0.858, 0.858, 0.858, 1)
+
+[sub_resource type="StyleBoxTexture" id="SBT_btn_hover"]
+texture = ExtResource("6_barhover")
+texture_margin_left = 6.0
+texture_margin_right = 6.0
+
+[node name="SettingsPanel" type="Control" unique_id=477335208]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_script")
+
+[node name="BG" type="ColorRect" parent="." unique_id=1673529925]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0, 0, 0, 0.7)
+
+[node name="Center" type="CenterContainer" parent="." unique_id=1036064553]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="NinePatchRect" parent="Center" unique_id=1736752657]
+custom_minimum_size = Vector2(540, 520)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("2_bg")
+patch_margin_left = 88
+patch_margin_top = 64
+patch_margin_right = 89
+patch_margin_bottom = 62
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Center/Panel" unique_id=679631278]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -240.0
+offset_top = -230.0
+offset_right = 240.0
+offset_bottom = 230.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="Title" type="Label" parent="Center/Panel/VBoxContainer" unique_id=253398528]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "SETTINGS"
+label_settings = SubResource("LabelSettings_title")
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Center/Panel/VBoxContainer" unique_id=1539641658]
+custom_minimum_size = Vector2(460, 370)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="Content" type="VBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer" unique_id=339957040]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/separation = 6
+
+[node name="SecGraphics" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=1051541578]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "GRAPHICS"
+label_settings = SubResource("LabelSettings_section")
+
+[node name="RowQuality" type="HBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=1040423847]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Lbl" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowQuality" unique_id=720315725]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Quality Preset:"
+label_settings = SubResource("LabelSettings_label")
+horizontal_alignment = 2
+
+[node name="OptQuality" type="OptionButton" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowQuality" unique_id=366936854]
+custom_minimum_size = Vector2(260, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("4_font")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("SBT_input_normal")
+theme_override_styles/focus = SubResource("SBT_input_focus")
+
+[node name="RowMSAA" type="HBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=2139317716]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Lbl" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowMSAA" unique_id=754671361]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Anti-Aliasing:"
+label_settings = SubResource("LabelSettings_label")
+horizontal_alignment = 2
+
+[node name="OptMSAA" type="OptionButton" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowMSAA" unique_id=1254542158]
+custom_minimum_size = Vector2(260, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("4_font")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("SBT_input_normal")
+theme_override_styles/focus = SubResource("SBT_input_focus")
+
+[node name="RowShadows" type="HBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=69423566]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Lbl" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowShadows" unique_id=1963796136]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Shadow Quality:"
+label_settings = SubResource("LabelSettings_label")
+horizontal_alignment = 2
+
+[node name="OptShadows" type="OptionButton" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowShadows" unique_id=1591125062]
+custom_minimum_size = Vector2(260, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("4_font")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("SBT_input_normal")
+theme_override_styles/focus = SubResource("SBT_input_focus")
+
+[node name="RowResolution" type="HBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=813813127]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Lbl" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowResolution" unique_id=258790921]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Resolution:"
+label_settings = SubResource("LabelSettings_label")
+horizontal_alignment = 2
+
+[node name="OptResolution" type="OptionButton" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowResolution" unique_id=181245718]
+custom_minimum_size = Vector2(260, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("4_font")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("SBT_input_normal")
+theme_override_styles/focus = SubResource("SBT_input_focus")
+
+[node name="RowFullscreen" type="HBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=466174063]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Lbl" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowFullscreen" unique_id=985633480]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Fullscreen:"
+label_settings = SubResource("LabelSettings_label")
+horizontal_alignment = 2
+
+[node name="ChkFullscreen" type="CheckBox" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowFullscreen" unique_id=1953484423]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("4_font")
+theme_override_font_sizes/font_size = 16
+
+[node name="RowBorderless" type="HBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=1501847785]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Lbl" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowBorderless" unique_id=1355244028]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Borderless:"
+label_settings = SubResource("LabelSettings_label")
+horizontal_alignment = 2
+
+[node name="ChkBorderless" type="CheckBox" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowBorderless" unique_id=411291386]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("4_font")
+theme_override_font_sizes/font_size = 16
+
+[node name="RowVSync" type="HBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=975503881]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Lbl" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowVSync" unique_id=109093887]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "VSync:"
+label_settings = SubResource("LabelSettings_label")
+horizontal_alignment = 2
+
+[node name="ChkVSync" type="CheckBox" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowVSync" unique_id=1481850786]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("4_font")
+theme_override_font_sizes/font_size = 16
+
+[node name="Sep1" type="HSeparator" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=1833896905]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="SecAudio" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=1008584109]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "AUDIO"
+label_settings = SubResource("LabelSettings_section")
+
+[node name="RowMasterVol" type="HBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=572084201]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Lbl" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowMasterVol" unique_id=1632459447]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Master Volume:"
+label_settings = SubResource("LabelSettings_label")
+horizontal_alignment = 2
+
+[node name="SliderMaster" type="HSlider" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowMasterVol" unique_id=1045389692]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 1
+value = 100.0
+
+[node name="LblMasterVol" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowMasterVol" unique_id=1506897851]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+text = "100%"
+label_settings = SubResource("LabelSettings_value")
+horizontal_alignment = 1
+
+[node name="RowSFXVol" type="HBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=1975026500]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Lbl" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowSFXVol" unique_id=269287143]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "SFX Volume:"
+label_settings = SubResource("LabelSettings_label")
+horizontal_alignment = 2
+
+[node name="SliderSFX" type="HSlider" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowSFXVol" unique_id=1120290573]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 1
+value = 100.0
+
+[node name="LblSFXVol" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowSFXVol" unique_id=83814163]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+text = "100%"
+label_settings = SubResource("LabelSettings_value")
+horizontal_alignment = 1
+
+[node name="RowMusicVol" type="HBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=779730297]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Lbl" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowMusicVol" unique_id=1819351405]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Music Volume:"
+label_settings = SubResource("LabelSettings_label")
+horizontal_alignment = 2
+
+[node name="SliderMusic" type="HSlider" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowMusicVol" unique_id=1111328946]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 1
+value = 100.0
+
+[node name="LblMusicVol" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowMusicVol" unique_id=1761415473]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+text = "100%"
+label_settings = SubResource("LabelSettings_value")
+horizontal_alignment = 1
+
+[node name="Sep2" type="HSeparator" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=1225649764]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="SecGameplay" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=817632808]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "GAMEPLAY"
+label_settings = SubResource("LabelSettings_section")
+
+[node name="RowGridSnap" type="HBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=1867480430]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Lbl" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowGridSnap" unique_id=1875716869]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Grid Snap:"
+label_settings = SubResource("LabelSettings_label")
+horizontal_alignment = 2
+
+[node name="ChkGridSnap" type="CheckBox" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowGridSnap" unique_id=1326752664]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("4_font")
+theme_override_font_sizes/font_size = 16
+button_pressed = true
+
+[node name="RowCamSens" type="HBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=1133678654]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Lbl" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowCamSens" unique_id=257507392]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Camera Sensitivity:"
+label_settings = SubResource("LabelSettings_label")
+horizontal_alignment = 2
+
+[node name="SliderCamSens" type="HSlider" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowCamSens" unique_id=357917970]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+value = 50.0
+
+[node name="LblCamSens" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowCamSens" unique_id=753906220]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+text = "1.0x"
+label_settings = SubResource("LabelSettings_value")
+horizontal_alignment = 1
+
+[node name="RowInvertY" type="HBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=1351921004]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Lbl" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowInvertY" unique_id=1757739032]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Invert Y-Axis:"
+label_settings = SubResource("LabelSettings_label")
+horizontal_alignment = 2
+
+[node name="ChkInvertY" type="CheckBox" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowInvertY" unique_id=1558147673]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("4_font")
+theme_override_font_sizes/font_size = 16
+
+[node name="Sep3" type="HSeparator" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=1343206959]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="SecNetwork" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=735988528]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "NETWORK"
+label_settings = SubResource("LabelSettings_section")
+
+[node name="RowPort" type="HBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=1009901662]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Lbl" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowPort" unique_id=1487547355]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Default Port:"
+label_settings = SubResource("LabelSettings_label")
+horizontal_alignment = 2
+
+[node name="SpnPort" type="SpinBox" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowPort" unique_id=1635318014]
+custom_minimum_size = Vector2(140, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 1024.0
+max_value = 65535.0
+value = 4789.0
+
+[node name="RowName" type="HBoxContainer" parent="Center/Panel/VBoxContainer/ScrollContainer/Content" unique_id=384277683]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Lbl" type="Label" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowName" unique_id=535260262]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+text = "Player Name:"
+label_settings = SubResource("LabelSettings_label")
+horizontal_alignment = 2
+
+[node name="TxtName" type="LineEdit" parent="Center/Panel/VBoxContainer/ScrollContainer/Content/RowName" unique_id=1302884448]
+custom_minimum_size = Vector2(260, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4_font")
+theme_override_styles/normal = SubResource("SBT_input_normal")
+theme_override_styles/focus = SubResource("SBT_input_focus")
+text = "Player"
+placeholder_text = "Your Name"
+
+[node name="Buttons" type="HBoxContainer" parent="Center/Panel/VBoxContainer" unique_id=934515251]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="CancelBtn" type="Button" parent="Center/Panel/VBoxContainer/Buttons" unique_id=532339404]
+custom_minimum_size = Vector2(180, 44)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("SBT_btn_normal")
+theme_override_styles/pressed = SubResource("SBT_btn_pressed")
+theme_override_styles/hover = SubResource("SBT_btn_hover")
+text = "CANCEL"
+
+[node name="ApplyBtn" type="Button" parent="Center/Panel/VBoxContainer/Buttons" unique_id=988109221]
+custom_minimum_size = Vector2(180, 44)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("SBT_btn_normal")
+theme_override_styles/pressed = SubResource("SBT_btn_pressed")
+theme_override_styles/hover = SubResource("SBT_btn_hover")
+text = "APPLY"

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d0t8v0psjvc02"]
+
+[ext_resource type="Script" uid="uid://dod6oavrdiw4v" path="res://terrain/pieces/wall.gd" id="1_g6boi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_175l1"]
+size = Vector3(1, 1, 0.4)
+
+[node name="CustomWall" type="StaticBody3D" unique_id=1381290698]
+script = ExtResource("1_g6boi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1629158894]
+shape = SubResource("BoxShape3D_175l1")

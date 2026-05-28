@@ -1,0 +1,27 @@
+[gd_resource type="Environment" format=3 uid="uid://dgttkso2hg1lc"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_oacv2"]
+
+[sub_resource type="Sky" id="Sky_vtt"]
+sky_material = SubResource("ProceduralSkyMaterial_oacv2")
+
+[resource]
+background_mode = 2
+background_color = Color(0.099985994, 0.099985994, 0.099985994, 1)
+sky = SubResource("Sky_vtt")
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_exposure = 0.69
+ssao_enabled = true
+ssao_intensity = 1.9
+ssao_power = 1.2
+glow_enabled = true
+glow_blend_mode = 0
+fog_enabled = true
+fog_mode = 1
+fog_light_energy = 0.64
+fog_density = 1.0
+fog_aerial_perspective = 0.225
+volumetric_fog_density = 0.1
+volumetric_fog_albedo = Color(0.1, 0.1, 0.15, 1)
+adjustment_enabled = true

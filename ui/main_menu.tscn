@@ -1,0 +1,345 @@
+[gd_scene format=3 uid="uid://1yofmxvp4sga"]
+
+[ext_resource type="Script" uid="uid://dlcxk6lvsnk5t" path="res://ui/main_menu.gd" id="1_mainmenu"]
+[ext_resource type="Texture2D" uid="uid://vodfkm7t7jvf" path="res://ui/Assets/BG1.png" id="2_bg"]
+[ext_resource type="Texture2D" uid="uid://dijb4daq4sm0h" path="res://ui/Assets/Forge.png" id="3_forge"]
+[ext_resource type="FontFile" uid="uid://bp8r4erko0xba" path="res://assets/Fonts/IMFeENrm29P.ttf" id="4_font"]
+[ext_resource type="LabelSettings" uid="uid://evj53jagim6d" path="res://assets/Fonts/new_label_settings.tres" id="5_labelstyle"]
+[ext_resource type="Texture2D" uid="uid://deyws5ijmnqmg" path="res://ui/Assets/text place.png" id="6_textplace"]
+[ext_resource type="Texture2D" uid="uid://b8ayjxy7mon0" path="res://ui/Assets/Bar Idle.png" id="7_baridle"]
+[ext_resource type="Texture2D" uid="uid://lf1v630l0yii" path="res://ui/Assets/Bar hover.png" id="8_barhover"]
+[ext_resource type="PackedScene" uid="uid://cr4f2q5eojm4e" path="res://ui/settings_panel.tscn" id="9_settings"]
+[ext_resource type="Texture2D" uid="uid://cl6auxj14lxw5" path="res://ui/Assets/Loading.png" id="10_loading"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_subtitle"]
+font = ExtResource("4_font")
+font_size = 25
+font_color = Color(0.7, 0.7, 0.7, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 0.3)
+shadow_offset = Vector2(0.51, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_title"]
+font = ExtResource("4_font")
+font_size = 36
+font_color = Color(0.83137256, 0.5882353, 0.19607843, 1)
+outline_size = 3
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 6
+shadow_color = Color(0, 0, 0, 0.5)
+shadow_offset = Vector2(0.51, 1)
+
+[sub_resource type="StyleBoxTexture" id="SBT_input_normal"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+texture = ExtResource("6_textplace")
+
+[sub_resource type="StyleBoxTexture" id="SBT_input_focus"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+texture = ExtResource("6_textplace")
+
+[sub_resource type="StyleBoxTexture" id="SBT_btn_normal"]
+texture = ExtResource("7_baridle")
+texture_margin_left = 6.0
+texture_margin_right = 6.0
+
+[sub_resource type="StyleBoxTexture" id="SBT_btn_pressed"]
+texture = ExtResource("8_barhover")
+texture_margin_left = 6.0
+texture_margin_right = 6.0
+modulate_color = Color(0.858, 0.858, 0.858, 1)
+
+[sub_resource type="StyleBoxTexture" id="SBT_btn_hover"]
+texture = ExtResource("8_barhover")
+texture_margin_left = 6.0
+texture_margin_right = 6.0
+
+[node name="MainMenu" type="Control" unique_id=918284737]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_mainmenu")
+
+[node name="BG" type="ColorRect" parent="." unique_id=488510629]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.65)
+
+[node name="Center" type="Control" parent="." unique_id=1850898218]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -2.0
+offset_right = 2.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Logo" type="TextureRect" parent="Center" unique_id=220495987]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -236.99994
+offset_top = -476.0
+offset_right = 1017.0
+offset_bottom = 778.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+size_flags_horizontal = 4
+texture = ExtResource("3_forge")
+
+[node name="Subtitle" type="Label" parent="Center" unique_id=199474123]
+layout_mode = 0
+offset_left = 730.0
+offset_top = 365.0
+offset_right = 901.0
+offset_bottom = 398.0
+size_flags_horizontal = 4
+text = "Virtual Tabletop"
+label_settings = SubResource("LabelSettings_subtitle")
+horizontal_alignment = 1
+
+[node name="MenuPanel" type="NinePatchRect" parent="Center" unique_id=1515800959]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -39.0
+offset_right = 189.0
+offset_bottom = 366.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg")
+patch_margin_left = 88
+patch_margin_top = 64
+patch_margin_right = 89
+patch_margin_bottom = 62
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Center/MenuPanel" unique_id=2083107841]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -151.21626
+offset_top = -106.22974
+offset_right = 228.78375
+offset_bottom = 192.77026
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="Center/MenuPanel/VBoxContainer" unique_id=748620537]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 36
+text = "VTT OPEN"
+label_settings = SubResource("LabelSettings_title")
+horizontal_alignment = 1
+
+[node name="InputName" type="LineEdit" parent="Center/MenuPanel/VBoxContainer" unique_id=327447942]
+custom_minimum_size = Vector2(280, 36)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("4_font")
+theme_override_styles/normal = SubResource("SBT_input_normal")
+theme_override_styles/focus = SubResource("SBT_input_focus")
+text = "Player"
+placeholder_text = "Your Name"
+
+[node name="ColorHBox" type="HBoxContainer" parent="Center/MenuPanel/VBoxContainer" unique_id=2100000099]
+custom_minimum_size = Vector2(280, 36)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ColorLabel" type="Label" parent="Center/MenuPanel/VBoxContainer/ColorHBox" unique_id=2100000100]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 14
+text = "Color:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorPicker" type="ColorPickerButton" parent="Center/MenuPanel/VBoxContainer/ColorHBox" unique_id=2100000101]
+custom_minimum_size = Vector2(40, 28)
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(1, 1, 1, 1)
+
+[node name="HostBtn" type="Button" parent="Center/MenuPanel/VBoxContainer" unique_id=49636033]
+custom_minimum_size = Vector2(220, 44)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("SBT_btn_normal")
+theme_override_styles/pressed = SubResource("SBT_btn_pressed")
+theme_override_styles/hover = SubResource("SBT_btn_hover")
+text = "HOST GAME"
+
+[node name="JoinPanel" type="Control" parent="Center/MenuPanel/VBoxContainer" unique_id=143740735]
+visible = false
+custom_minimum_size = Vector2(380, 90)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Center/MenuPanel/VBoxContainer/JoinPanel" unique_id=570164788]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 370.0
+offset_bottom = 40.0
+
+[node name="InputIP" type="LineEdit" parent="Center/MenuPanel/VBoxContainer/JoinPanel/HBoxContainer" unique_id=126471255]
+custom_minimum_size = Vector2(250, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4_font")
+theme_override_styles/normal = SubResource("SBT_input_normal")
+theme_override_styles/focus = SubResource("SBT_input_focus")
+text = "127.0.0.1"
+
+[node name="InputPort" type="LineEdit" parent="Center/MenuPanel/VBoxContainer/JoinPanel/HBoxContainer" unique_id=1417782697]
+custom_minimum_size = Vector2(90, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4_font")
+theme_override_styles/normal = SubResource("SBT_input_normal")
+theme_override_styles/focus = SubResource("SBT_input_focus")
+text = "4789"
+placeholder_text = "Port"
+
+[node name="ConnectBtn" type="Button" parent="Center/MenuPanel/VBoxContainer/JoinPanel" unique_id=961532991]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 44.0
+offset_right = 300.0
+offset_bottom = 86.0
+theme_override_styles/normal = SubResource("SBT_btn_normal")
+theme_override_styles/pressed = SubResource("SBT_btn_pressed")
+theme_override_styles/hover = SubResource("SBT_btn_hover")
+text = "CONNECT"
+
+[node name="JoinBtn" type="Button" parent="Center/MenuPanel/VBoxContainer" unique_id=201227099]
+custom_minimum_size = Vector2(220, 44)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("SBT_btn_normal")
+theme_override_styles/pressed = SubResource("SBT_btn_pressed")
+theme_override_styles/hover = SubResource("SBT_btn_hover")
+text = "JOIN GAME"
+
+[node name="SettingsBtn" type="Button" parent="Center/MenuPanel/VBoxContainer" unique_id=933128470]
+custom_minimum_size = Vector2(220, 44)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("SBT_btn_normal")
+theme_override_styles/pressed = SubResource("SBT_btn_pressed")
+theme_override_styles/hover = SubResource("SBT_btn_hover")
+text = "SETTINGS"
+
+[node name="QuitBtn" type="Button" parent="Center/MenuPanel/VBoxContainer" unique_id=422284890]
+custom_minimum_size = Vector2(220, 44)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("SBT_btn_normal")
+theme_override_styles/pressed = SubResource("SBT_btn_pressed")
+theme_override_styles/hover = SubResource("SBT_btn_hover")
+text = "QUIT"
+
+[node name="StatusLabel" type="Label" parent="Center/MenuPanel/VBoxContainer" unique_id=1749662895]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_font_sizes/font_size = 14
+label_settings = ExtResource("5_labelstyle")
+horizontal_alignment = 1
+
+[node name="SettingsPanel" parent="." unique_id=72593818 instance=ExtResource("9_settings")]
+layout_mode = 1
+
+[node name="LoadingOverlay" type="ColorRect" parent="." unique_id=2100000098]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.972549)
+
+[node name="Logo" type="TextureRect" parent="LoadingOverlay" unique_id=1091723536]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -307.0
+offset_top = -476.0
+offset_right = 947.0
+offset_bottom = 778.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_forge")
+
+[node name="LoadingIcon" type="TextureRect" parent="LoadingOverlay" unique_id=571498321]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = 40.0
+offset_right = 24.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_loading")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ProgressLabel" type="Label" parent="LoadingOverlay" unique_id=1459914494]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = 100.0
+offset_right = 100.0
+offset_bottom = 130.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Loading..."
+horizontal_alignment = 1

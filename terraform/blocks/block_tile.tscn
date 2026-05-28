@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://m2hs1dop08y5"]
+
+[ext_resource type="Script" uid="uid://crgjhgh4tx2o3" path="res://Scripts/block_tile.gd" id="1_block_tile"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vuvds"]
+
+[node name="ModularBlock" type="StaticBody3D" unique_id=190000000]
+script = ExtResource("1_block_tile")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1320868961]
+shape = SubResource("BoxShape3D_vuvds")

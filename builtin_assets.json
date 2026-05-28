@@ -1,0 +1,1282 @@
+{
+	"floors": [
+		{
+			"builtin": true,
+			"name": "Floor1",
+			"path": "res://assets/floors/Floor1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor10",
+			"path": "res://assets/floors/Floor10.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor11",
+			"path": "res://assets/floors/Floor11.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor12",
+			"path": "res://assets/floors/Floor12.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor13",
+			"path": "res://assets/floors/Floor13.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor14",
+			"path": "res://assets/floors/Floor14.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor16",
+			"path": "res://assets/floors/Floor16.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor17",
+			"path": "res://assets/floors/Floor17.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor18",
+			"path": "res://assets/floors/Floor18.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor19",
+			"path": "res://assets/floors/Floor19.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor2",
+			"path": "res://assets/floors/Floor2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor20",
+			"path": "res://assets/floors/Floor20.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor21",
+			"path": "res://assets/floors/Floor21.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor22",
+			"path": "res://assets/floors/Floor22.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor3",
+			"path": "res://assets/floors/Floor3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor4",
+			"path": "res://assets/floors/Floor4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor5",
+			"path": "res://assets/floors/Floor5.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor6",
+			"path": "res://assets/floors/Floor6.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor7",
+			"path": "res://assets/floors/Floor7.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor8",
+			"path": "res://assets/floors/Floor8.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Floor9",
+			"path": "res://assets/floors/Floor9.glb"
+		},
+		{
+			"builtin": true,
+			"name": "FloorFoundation1",
+			"path": "res://assets/floors/FloorFoundation1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "FloorFoundation2",
+			"path": "res://assets/floors/FloorFoundation2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "FloorWood1",
+			"path": "res://assets/floors/FloorWood1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "FloorWood2",
+			"path": "res://assets/floors/FloorWood2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "FloorWood3",
+			"path": "res://assets/floors/FloorWood3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "FloorWood4",
+			"path": "res://assets/floors/FloorWood4.glb"
+		}
+	],
+	"monsters": [],
+	"nature": [
+		{
+			"builtin": true,
+			"name": "Bush1",
+			"path": "res://assets/nature/Bush1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bush2",
+			"path": "res://assets/nature/Bush2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Clover1",
+			"path": "res://assets/nature/Clover1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Clover2",
+			"path": "res://assets/nature/Clover2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "DeadTree2",
+			"path": "res://assets/nature/DeadTree2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "DeadTree3",
+			"path": "res://assets/nature/DeadTree3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "DeadTree4",
+			"path": "res://assets/nature/DeadTree4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "DeadTree5",
+			"path": "res://assets/nature/DeadTree5.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Fem1",
+			"path": "res://assets/nature/Fem1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Flower1",
+			"path": "res://assets/nature/Flower1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Flower2",
+			"path": "res://assets/nature/Flower2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Flower3",
+			"path": "res://assets/nature/Flower3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Flower4",
+			"path": "res://assets/nature/Flower4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Pebble1",
+			"path": "res://assets/nature/Pebble1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Pebble2",
+			"path": "res://assets/nature/Pebble2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Pebble3",
+			"path": "res://assets/nature/Pebble3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Pebble4",
+			"path": "res://assets/nature/Pebble4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Pine1",
+			"path": "res://assets/nature/Pine1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Pine2",
+			"path": "res://assets/nature/Pine2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Pine3",
+			"path": "res://assets/nature/Pine3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Pine4",
+			"path": "res://assets/nature/Pine4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Pine5",
+			"path": "res://assets/nature/Pine5.glb"
+		},
+		{
+			"builtin": true,
+			"name": "plant1",
+			"path": "res://assets/nature/plant1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "plant2",
+			"path": "res://assets/nature/plant2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "plant3",
+			"path": "res://assets/nature/plant3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "plant4",
+			"path": "res://assets/nature/plant4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "RockMedium1",
+			"path": "res://assets/nature/RockMedium1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "RockMedium2",
+			"path": "res://assets/nature/RockMedium2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "RockMedium3",
+			"path": "res://assets/nature/RockMedium3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "RockPath1",
+			"path": "res://assets/nature/RockPath1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "RockPath2",
+			"path": "res://assets/nature/RockPath2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "RockPath3",
+			"path": "res://assets/nature/RockPath3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "RockPath4",
+			"path": "res://assets/nature/RockPath4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "RockPath5",
+			"path": "res://assets/nature/RockPath5.glb"
+		},
+		{
+			"builtin": true,
+			"name": "RockPath6",
+			"path": "res://assets/nature/RockPath6.glb"
+		},
+		{
+			"builtin": true,
+			"name": "RockPath7",
+			"path": "res://assets/nature/RockPath7.glb"
+		},
+		{
+			"builtin": true,
+			"name": "RockPathSmall1",
+			"path": "res://assets/nature/RockPathSmall1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "RockPathSmall2",
+			"path": "res://assets/nature/RockPathSmall2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "RockPathSmall3",
+			"path": "res://assets/nature/RockPathSmall3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Tree1",
+			"path": "res://assets/nature/Tree1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Tree2",
+			"path": "res://assets/nature/Tree2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Tree3",
+			"path": "res://assets/nature/Tree3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Tree4",
+			"path": "res://assets/nature/Tree4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Tree5",
+			"path": "res://assets/nature/Tree5.glb"
+		},
+		{
+			"builtin": true,
+			"name": "TwistedTree1",
+			"path": "res://assets/nature/TwistedTree1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "TwistedTree2",
+			"path": "res://assets/nature/TwistedTree2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "TwistedTree3",
+			"path": "res://assets/nature/TwistedTree3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "TwistedTree4",
+			"path": "res://assets/nature/TwistedTree4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "TwistedTree5",
+			"path": "res://assets/nature/TwistedTree5.glb"
+		}
+	],
+	"props": [
+		{
+			"builtin": true,
+			"name": "Anvil1",
+			"path": "res://assets/props/Anvil1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Anvil2",
+			"path": "res://assets/props/Anvil2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Axe",
+			"path": "res://assets/props/Axe.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bag",
+			"path": "res://assets/props/Bag.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Banner1",
+			"path": "res://assets/props/Banner1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Banner2",
+			"path": "res://assets/props/Banner2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Banner3",
+			"path": "res://assets/props/Banner3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Banner4",
+			"path": "res://assets/props/Banner4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Barrel1",
+			"path": "res://assets/props/Barrel1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Barrel2",
+			"path": "res://assets/props/Barrel2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Barrel3",
+			"path": "res://assets/props/Barrel3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Barrel4",
+			"path": "res://assets/props/Barrel4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Barrier1",
+			"path": "res://assets/props/Barrier1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Barrier2",
+			"path": "res://assets/props/Barrier2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Barrier3",
+			"path": "res://assets/props/Barrier3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Barrier4",
+			"path": "res://assets/props/Barrier4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Barrier5",
+			"path": "res://assets/props/Barrier5.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Barrier6",
+			"path": "res://assets/props/Barrier6.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Barrier7",
+			"path": "res://assets/props/Barrier7.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bed1",
+			"path": "res://assets/props/Bed1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bed2",
+			"path": "res://assets/props/Bed2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bed3",
+			"path": "res://assets/props/Bed3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bed4",
+			"path": "res://assets/props/Bed4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bed5",
+			"path": "res://assets/props/Bed5.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bench",
+			"path": "res://assets/props/Bench.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Book",
+			"path": "res://assets/props/Book.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Book1",
+			"path": "res://assets/props/Book1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Book10",
+			"path": "res://assets/props/Book10.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Book11",
+			"path": "res://assets/props/Book11.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Book3",
+			"path": "res://assets/props/Book3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Book4",
+			"path": "res://assets/props/Book4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Book5",
+			"path": "res://assets/props/Book5.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Book6",
+			"path": "res://assets/props/Book6.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Book7",
+			"path": "res://assets/props/Book7.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Book8",
+			"path": "res://assets/props/Book8.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Book9",
+			"path": "res://assets/props/Book9.glb"
+		},
+		{
+			"builtin": true,
+			"name": "BookCase",
+			"path": "res://assets/props/BookCase.glb"
+		},
+		{
+			"builtin": true,
+			"name": "BookStand",
+			"path": "res://assets/props/BookStand.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bottle1",
+			"path": "res://assets/props/Bottle1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bottle2",
+			"path": "res://assets/props/Bottle2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bottle3",
+			"path": "res://assets/props/Bottle3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bottle4",
+			"path": "res://assets/props/Bottle4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bottle5",
+			"path": "res://assets/props/Bottle5.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bottle6",
+			"path": "res://assets/props/Bottle6.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Box1",
+			"path": "res://assets/props/Box1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Box2",
+			"path": "res://assets/props/Box2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Box3",
+			"path": "res://assets/props/Box3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Box4",
+			"path": "res://assets/props/Box4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bucket1",
+			"path": "res://assets/props/Bucket1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Bucket2",
+			"path": "res://assets/props/Bucket2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Cabinet",
+			"path": "res://assets/props/Cabinet.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Cage",
+			"path": "res://assets/props/Cage.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Candle1",
+			"path": "res://assets/props/Candle1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Candle2",
+			"path": "res://assets/props/Candle2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Candle3",
+			"path": "res://assets/props/Candle3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Candle4",
+			"path": "res://assets/props/Candle4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "CandleStand1",
+			"path": "res://assets/props/CandleStand1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "CandleStand2",
+			"path": "res://assets/props/CandleStand2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "CandleStand3",
+			"path": "res://assets/props/CandleStand3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Cauldron",
+			"path": "res://assets/props/Cauldron.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Chain",
+			"path": "res://assets/props/Chain.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Chair",
+			"path": "res://assets/props/Chair.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Chair1",
+			"path": "res://assets/props/Chair1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Chalice",
+			"path": "res://assets/props/Chalice.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Chest1",
+			"path": "res://assets/props/Chest1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Chest2",
+			"path": "res://assets/props/Chest2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Coin1",
+			"path": "res://assets/props/Coin1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Coin2",
+			"path": "res://assets/props/Coin2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Coin3",
+			"path": "res://assets/props/Coin3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Column",
+			"path": "res://assets/props/Column.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Crate1",
+			"path": "res://assets/props/Crate1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Crate2",
+			"path": "res://assets/props/Crate2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Crates",
+			"path": "res://assets/props/Crates.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Decor1",
+			"path": "res://assets/props/Decor1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Decor2",
+			"path": "res://assets/props/Decor2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Decor3",
+			"path": "res://assets/props/Decor3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Dummy",
+			"path": "res://assets/props/Dummy.glb"
+		},
+		{
+			"builtin": true,
+			"name": "FarmCrate",
+			"path": "res://assets/props/FarmCrate.glb"
+		},
+		{
+			"builtin": true,
+			"name": "FarmCrate1",
+			"path": "res://assets/props/FarmCrate1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "FarmCrate2",
+			"path": "res://assets/props/FarmCrate2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Food1",
+			"path": "res://assets/props/Food1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Food2",
+			"path": "res://assets/props/Food2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Fork",
+			"path": "res://assets/props/Fork.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Keg",
+			"path": "res://assets/props/Keg.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Keg2",
+			"path": "res://assets/props/Keg2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Keys",
+			"path": "res://assets/props/Keys.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Keys1",
+			"path": "res://assets/props/Keys1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Knife",
+			"path": "res://assets/props/Knife.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Lantren",
+			"path": "res://assets/props/Lantren.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Mug",
+			"path": "res://assets/props/Mug.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Nightstand",
+			"path": "res://assets/props/Nightstand.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Pickaxe",
+			"path": "res://assets/props/Pickaxe.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Piller",
+			"path": "res://assets/props/Piller.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Piller1",
+			"path": "res://assets/props/Piller1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Plate",
+			"path": "res://assets/props/Plate.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Plate1",
+			"path": "res://assets/props/Plate1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Plate2",
+			"path": "res://assets/props/Plate2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Pot1",
+			"path": "res://assets/props/Pot1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Pot2",
+			"path": "res://assets/props/Pot2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Pouch",
+			"path": "res://assets/props/Pouch.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Rope1",
+			"path": "res://assets/props/Rope1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Rope2",
+			"path": "res://assets/props/Rope2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Rope3",
+			"path": "res://assets/props/Rope3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Rubble1",
+			"path": "res://assets/props/Rubble1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Rubble2",
+			"path": "res://assets/props/Rubble2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Scroll",
+			"path": "res://assets/props/Scroll.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Shelf1",
+			"path": "res://assets/props/Shelf1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Shelf2",
+			"path": "res://assets/props/Shelf2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Shelf3",
+			"path": "res://assets/props/Shelf3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Shelf4",
+			"path": "res://assets/props/Shelf4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Shelf5",
+			"path": "res://assets/props/Shelf5.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Shelf6",
+			"path": "res://assets/props/Shelf6.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Shelf7",
+			"path": "res://assets/props/Shelf7.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Shield",
+			"path": "res://assets/props/Shield.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Spoon",
+			"path": "res://assets/props/Spoon.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Stairs1",
+			"path": "res://assets/props/Stairs1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Stairs2",
+			"path": "res://assets/props/Stairs2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Stairs3",
+			"path": "res://assets/props/Stairs3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Stairs4",
+			"path": "res://assets/props/Stairs4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Stairs5",
+			"path": "res://assets/props/Stairs5.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Stairs6",
+			"path": "res://assets/props/Stairs6.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Stairs7",
+			"path": "res://assets/props/Stairs7.glb"
+		},
+		{
+			"builtin": true,
+			"name": "StairsMod1",
+			"path": "res://assets/props/StairsMod1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "StairsWood1",
+			"path": "res://assets/props/StairsWood1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "StairsWood2",
+			"path": "res://assets/props/StairsWood2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Stall",
+			"path": "res://assets/props/Stall.glb"
+		},
+		{
+			"builtin": true,
+			"name": "StallCart",
+			"path": "res://assets/props/StallCart.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Stool",
+			"path": "res://assets/props/Stool.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Stool1",
+			"path": "res://assets/props/Stool1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Sword",
+			"path": "res://assets/props/Sword.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Table",
+			"path": "res://assets/props/Table.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Table1",
+			"path": "res://assets/props/Table1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Table2",
+			"path": "res://assets/props/Table2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Table3",
+			"path": "res://assets/props/Table3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Table4",
+			"path": "res://assets/props/Table4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Table5",
+			"path": "res://assets/props/Table5.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Table6",
+			"path": "res://assets/props/Table6.glb"
+		},
+		{
+			"builtin": true,
+			"name": "TableMedium1",
+			"path": "res://assets/props/TableMedium1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "TableMedium2",
+			"path": "res://assets/props/TableMedium2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "TableMedium3",
+			"path": "res://assets/props/TableMedium3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "TableMedium4",
+			"path": "res://assets/props/TableMedium4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "TableMedium5",
+			"path": "res://assets/props/TableMedium5.glb"
+		},
+		{
+			"builtin": true,
+			"name": "TableSmall1",
+			"path": "res://assets/props/TableSmall1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "TableSmall2",
+			"path": "res://assets/props/TableSmall2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "TableSmall3",
+			"path": "res://assets/props/TableSmall3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Torch",
+			"path": "res://assets/props/Torch.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Torch1",
+			"path": "res://assets/props/Torch1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Torch2",
+			"path": "res://assets/props/Torch2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Vase",
+			"path": "res://assets/props/Vase.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Vase1",
+			"path": "res://assets/props/Vase1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Vase2",
+			"path": "res://assets/props/Vase2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Weaponstand",
+			"path": "res://assets/props/Weaponstand.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Whetstone",
+			"path": "res://assets/props/Whetstone.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Workbench",
+			"path": "res://assets/props/Workbench.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Workbench1",
+			"path": "res://assets/props/Workbench1.glb"
+		}
+	],
+	"tokens": [],
+	"walls": [
+		{
+			"builtin": true,
+			"name": "Wall1",
+			"path": "res://assets/walls/Wall1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Wall10",
+			"path": "res://assets/walls/Wall10.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Wall11",
+			"path": "res://assets/walls/Wall11.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Wall12",
+			"path": "res://assets/walls/Wall12.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Wall13",
+			"path": "res://assets/walls/Wall13.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Wall2",
+			"path": "res://assets/walls/Wall2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Wall3",
+			"path": "res://assets/walls/Wall3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Wall4",
+			"path": "res://assets/walls/Wall4.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Wall5",
+			"path": "res://assets/walls/Wall5.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Wall6",
+			"path": "res://assets/walls/Wall6.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Wall7",
+			"path": "res://assets/walls/Wall7.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Wall8",
+			"path": "res://assets/walls/Wall8.glb"
+		},
+		{
+			"builtin": true,
+			"name": "Wall9",
+			"path": "res://assets/walls/Wall9.glb"
+		},
+		{
+			"builtin": true,
+			"name": "WallDoor1",
+			"path": "res://assets/walls/WallDoor1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "WallDoor2",
+			"path": "res://assets/walls/WallDoor2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "WallEnd",
+			"path": "res://assets/walls/WallEnd.glb"
+		},
+		{
+			"builtin": true,
+			"name": "WallHalf1",
+			"path": "res://assets/walls/WallHalf1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "WallHalf2",
+			"path": "res://assets/walls/WallHalf2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "WallHalf3",
+			"path": "res://assets/walls/WallHalf3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "WallWindow1",
+			"path": "res://assets/walls/WallWindow1.glb"
+		},
+		{
+			"builtin": true,
+			"name": "WallWindow2",
+			"path": "res://assets/walls/WallWindow2.glb"
+		},
+		{
+			"builtin": true,
+			"name": "WallWindow3",
+			"path": "res://assets/walls/WallWindow3.glb"
+		},
+		{
+			"builtin": true,
+			"name": "WallWindow4",
+			"path": "res://assets/walls/WallWindow4.glb"
+		}
+	]
+}

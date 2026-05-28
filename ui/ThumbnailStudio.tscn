@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://dmdoyyemfmsgu"]
+
+[ext_resource type="Script" uid="uid://di2twmbn5tsw" path="res://ui/thumbnail_studio.gd" id="1_studio"]
+
+[sub_resource type="Environment" id="Environment_1"]
+background_mode = 1
+background_color = Color(0.15, 0.15, 0.15, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.5
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1"]
+size = Vector2(100, 100)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1"]
+albedo_color = Color(0.2, 0.2, 0.2, 1)
+
+[node name="ThumbnailStudio" type="Control" unique_id=2063137772]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_studio")
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=221163419]
+own_world_3d = true
+handle_input_locally = false
+size = Vector2i(256, 256)
+render_target_update_mode = 4
+
+[node name="World" type="Node3D" parent="SubViewport" unique_id=625686205]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewport/World" unique_id=797331153]
+environment = SubResource("Environment_1")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport/World" unique_id=2132732442]
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 5, 5, 5)
+shadow_enabled = true
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="SubViewport/World" unique_id=276391064]
+transform = Transform3D(0.707107, 0.5, -0.5, 0, 0.707107, 0.707107, 0.707107, -0.5, 0.5, -5, 5, -5)
+light_energy = 0.5
+
+[node name="Floor" type="MeshInstance3D" parent="SubViewport/World" unique_id=918911200]
+mesh = SubResource("PlaneMesh_1")
+surface_material_override/0 = SubResource("StandardMaterial3D_1")
+
+[node name="ModelHolder" type="Node3D" parent="SubViewport/World" unique_id=831119272]
+
+[node name="Camera3D" type="Camera3D" parent="SubViewport/World" unique_id=450544283]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 2, 4)
+fov = 40.0

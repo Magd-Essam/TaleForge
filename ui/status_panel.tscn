@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://c6xw3aeo66hmb"]
+
+[ext_resource type="Script" path="res://ui/status_panel.gd" id="1_0syry"]
+
+[node name="StatusPanel" type="Control"]
+anchors_preset = 0
+offset_left = 10.0
+offset_top = 360.0
+offset_right = 200.0
+offset_bottom = 460.0
+mouse_filter = 2
+script = ExtResource("1_0syry")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 190.0
+offset_bottom = 100.0
+mouse_filter = 1
+
+[node name="DragHandle" type="Control" parent="Panel"]
+layout_mode = 0
+offset_right = 190.0
+offset_bottom = 20.0
+mouse_filter = 0
+mouse_default_cursor_shape = 13
+
+[node name="DragLabel" type="Label" parent="Panel/DragHandle"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 186.0
+offset_bottom = 18.0
+text = "═══ STATUS ═══"
+horizontal_alignment = 1
+
+[node name="BuildBtn" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 26.0
+offset_right = 100.0
+offset_bottom = 52.0
+text = "Build OFF"
+
+[node name="FloorLabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 30.0
+offset_right = 182.0
+offset_bottom = 48.0
+text = "Floor 0"
+
+[node name="InitiativeBtn" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 58.0
+offset_right = 100.0
+offset_bottom = 84.0
+text = "Initiative"
+
+[node name="EndTurnBtn" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 58.0
+offset_right = 182.0
+offset_bottom = 84.0
+text = "End Turn"
+
+[connection signal="gui_input" from="Panel/DragHandle" to="." method="_on_drag_handle_gui_input"]

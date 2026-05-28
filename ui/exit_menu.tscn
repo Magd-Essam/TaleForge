@@ -1,0 +1,152 @@
+[gd_scene format=3 uid="uid://di5vyulnww6f5"]
+
+[ext_resource type="Script" uid="uid://cvm5bxa45a3w2" path="res://ui/exit_menu.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://vodfkm7t7jvf" path="res://ui/Assets/BG1.png" id="2_bg"]
+[ext_resource type="FontFile" uid="uid://bp8r4erko0xba" path="res://assets/Fonts/IMFeENrm29P.ttf" id="3_font"]
+[ext_resource type="Texture2D" uid="uid://b8ayjxy7mon0" path="res://ui/Assets/Bar Idle.png" id="4_baridle"]
+[ext_resource type="Texture2D" uid="uid://lf1v630l0yii" path="res://ui/Assets/Bar hover.png" id="5_barhover"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_title"]
+font = ExtResource("3_font")
+font_size = 22
+font_color = Color(0.83137256, 0.5882353, 0.19607843, 1)
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 4
+shadow_color = Color(0, 0, 0, 0.44)
+shadow_offset = Vector2(0.51, 1)
+
+[sub_resource type="StyleBoxTexture" id="SBT_btn_normal"]
+texture = ExtResource("4_baridle")
+texture_margin_left = 6.0
+texture_margin_right = 6.0
+
+[sub_resource type="StyleBoxTexture" id="SBT_btn_pressed"]
+texture = ExtResource("5_barhover")
+texture_margin_left = 6.0
+texture_margin_right = 6.0
+modulate_color = Color(0.858, 0.858, 0.858, 1)
+
+[sub_resource type="StyleBoxTexture" id="SBT_btn_hover"]
+texture = ExtResource("5_barhover")
+texture_margin_left = 6.0
+texture_margin_right = 6.0
+
+[node name="ExitMenu" type="Control" unique_id=445998787]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_script")
+
+[node name="Backdrop" type="ColorRect" parent="." unique_id=283757898]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0, 0, 0, 0.55)
+
+[node name="Panel" type="Control" parent="." unique_id=1832462795]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -260.0
+offset_right = 160.0
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="NinePatchRect" parent="Panel" unique_id=546966961]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 512.0
+texture = ExtResource("2_bg")
+patch_margin_left = 88
+patch_margin_top = 64
+patch_margin_right = 89
+patch_margin_bottom = 62
+
+[node name="Title" type="Label" parent="Panel" unique_id=1146664272]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 16.0
+offset_right = 300.0
+offset_bottom = 46.0
+text = "EXIT MENU"
+label_settings = SubResource("LabelSettings_title")
+horizontal_alignment = 1
+
+[node name="ResumeBtn" type="Button" parent="Panel" unique_id=1017426432]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 95.0
+offset_right = 270.0
+offset_bottom = 137.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("SBT_btn_normal")
+theme_override_styles/pressed = SubResource("SBT_btn_pressed")
+theme_override_styles/hover = SubResource("SBT_btn_hover")
+text = "RESUME"
+
+[node name="SettingsBtn" type="Button" parent="Panel" unique_id=1235023457]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 145.0
+offset_right = 270.0
+offset_bottom = 187.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("SBT_btn_normal")
+theme_override_styles/pressed = SubResource("SBT_btn_pressed")
+theme_override_styles/hover = SubResource("SBT_btn_hover")
+text = "SETTINGS"
+
+[node name="DisconnectBtn" type="Button" parent="Panel" unique_id=1047659839]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 195.0
+offset_right = 270.0
+offset_bottom = 237.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("SBT_btn_normal")
+theme_override_styles/pressed = SubResource("SBT_btn_pressed")
+theme_override_styles/hover = SubResource("SBT_btn_hover")
+text = "DISCONNECT"
+
+[node name="QuitBtn" type="Button" parent="Panel" unique_id=1771408989]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 245.0
+offset_right = 270.0
+offset_bottom = 287.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("SBT_btn_normal")
+theme_override_styles/pressed = SubResource("SBT_btn_pressed")
+theme_override_styles/hover = SubResource("SBT_btn_hover")
+text = "QUIT"
+
+[node name="PlayerListLabel" type="Label" parent="Panel" unique_id=2100000010]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 308.0
+offset_right = 300.0
+offset_bottom = 330.0
+theme_override_font_sizes/font_size = 16
+text = "Players:"
+label_settings = SubResource("LabelSettings_title")
+
+[node name="PlayerList" type="VBoxContainer" parent="Panel" unique_id=2100000011]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 332.0
+offset_right = 300.0
+offset_bottom = 400.0

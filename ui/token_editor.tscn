@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://cmrjj0fqcq518"]
+
+[ext_resource type="Script" uid="uid://d0dhxnpff0w" path="res://ui/token_editor.gd" id="1_y2ij1"]
+[ext_resource type="LabelSettings" uid="uid://evj53jagim6d" path="res://assets/Fonts/new_label_settings.tres" id="2_6esve"]
+[ext_resource type="Texture2D" uid="uid://deyws5ijmnqmg" path="res://ui/Assets/text place.png" id="3_pnk5v"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vy7db"]
+texture = ExtResource("3_pnk5v")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_145r0"]
+texture = ExtResource("3_pnk5v")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ibtw7"]
+texture = ExtResource("3_pnk5v")
+
+[node name="TokenEditor" type="Control" unique_id=1762456594]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 260.0
+offset_bottom = 620.0
+mouse_filter = 1
+script = ExtResource("1_y2ij1")
+
+[node name="LabelTitle" type="Label" parent="." unique_id=1451132470]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 250.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 16
+text = "EDIT TOKEN"
+label_settings = ExtResource("2_6esve")
+
+[node name="LabelName" type="Label" parent="." unique_id=1318824637]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 46.0
+offset_right = 250.0
+offset_bottom = 68.0
+text = "Name"
+label_settings = ExtResource("2_6esve")
+
+[node name="InputName" type="LineEdit" parent="." unique_id=1121279189]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 68.0
+offset_right = 250.0
+offset_bottom = 100.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_vy7db")
+theme_override_styles/read_only = SubResource("StyleBoxTexture_145r0")
+theme_override_styles/focus = SubResource("StyleBoxTexture_ibtw7")
+
+[node name="LabelSpeed" type="Label" parent="." unique_id=1680898844]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 108.0
+offset_right = 250.0
+offset_bottom = 130.0
+text = "Movement Speed (ft)"
+label_settings = ExtResource("2_6esve")
+
+[node name="InputSpeed" type="SpinBox" parent="." unique_id=5276948]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 130.0
+offset_right = 250.0
+offset_bottom = 162.0
+max_value = 999.0
+step = 5.0
+value = 30.0
+
+[node name="LabelMovementBudget" type="Label" parent="." unique_id=776238841]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 170.0
+offset_right = 250.0
+offset_bottom = 192.0
+text = "Movement Budget (ft)"
+label_settings = ExtResource("2_6esve")
+
+[node name="InputMovementBudget" type="SpinBox" parent="." unique_id=2052938941]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 192.0
+offset_right = 250.0
+offset_bottom = 224.0
+max_value = 999.0
+step = 5.0
+value = 30.0
+
+[node name="LabelBlind" type="Label" parent="." unique_id=1152828941]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 233.0
+offset_right = 130.0
+offset_bottom = 257.0
+text = "Blinded"
+label_settings = ExtResource("2_6esve")
+
+[node name="InputBlind" type="CheckBox" parent="." unique_id=1733679943]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 231.0
+offset_right = 250.0
+offset_bottom = 263.0
+
+[node name="LabelVision" type="Label" parent="." unique_id=2058580358]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 273.0
+offset_right = 250.0
+offset_bottom = 297.0
+text = "Vision Radius (0=global)"
+label_settings = ExtResource("2_6esve")
+
+[node name="InputVision" type="SpinBox" parent="." unique_id=525592141]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 297.0
+offset_right = 250.0
+offset_bottom = 329.0
+max_value = 20.0
+
+[node name="LabelOwner" type="Label" parent="." unique_id=1070028092]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 339.0
+offset_right = 250.0
+offset_bottom = 361.0
+text = "Owner"
+label_settings = ExtResource("2_6esve")
+
+[node name="InputOwner" type="OptionButton" parent="." unique_id=963332537]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 361.0
+offset_right = 250.0
+offset_bottom = 393.0
+
+[node name="BtnApply" type="Button" parent="." unique_id=1647905686]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 437.0
+offset_right = 124.0
+offset_bottom = 471.0
+text = "Apply"
+
+[node name="BtnClose" type="Button" parent="." unique_id=1071879037]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 437.0
+offset_right = 250.0
+offset_bottom = 471.0
+text = "Close"
